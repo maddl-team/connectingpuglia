@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary:        #0A0A0A;
+  --color-primary-light:  #1A1A1A;
+  --color-accent:         #C9A84C;
+  --color-accent-light:   #D4B96A;
+  --color-cream:          #F8F5EF;
+  --color-cream-dark:     #EFE9DC;
+  --color-text-primary:   #111111;
+  --color-text-secondary: #555555;
+  --color-text-muted:     #888888;
+  --color-border:         #E0D9CE;
+  --color-border-dark:    #333333;
+
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans:  "DM Sans", system-ui, sans-serif;
+
+  --transition-base: 200ms ease;
+  --transition-slow: 400ms ease;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-charcoal-800 bg-white antialiased;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-light tracking-tight;
+    line-height: 1.2;
+  }
+
+  h1 { @apply text-display-xl; }
+  h2 { @apply text-display-md; }
+  h3 { @apply text-display-sm; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-charcoal-900 text-white font-sans font-medium text-sm tracking-widest uppercase
+           px-8 py-4 transition-all duration-300
+           hover:bg-gold-500 hover:text-charcoal-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-500;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border border-charcoal-900 text-charcoal-900 font-sans font-medium text-sm tracking-widest uppercase
+           px-8 py-4 transition-all duration-300
+           hover:bg-charcoal-900 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-charcoal-900;
+  }
+
+  .btn-ghost-light {
+    @apply inline-flex items-center gap-2 border border-white/60 text-white font-sans font-medium text-sm tracking-widest uppercase
+           px-8 py-4 transition-all duration-300
+           hover:bg-white hover:text-charcoal-900 focus:outline-none;
+  }
+
+  .section-label {
+    @apply font-sans text-xs font-medium tracking-[0.2em] uppercase text-gold-500;
+  }
+
+  .section-title {
+    @apply font-serif font-light text-charcoal-900;
+  }
+
+  .divider-gold {
+    @apply block w-12 h-px bg-gold-500;
+  }
+
+  .card-service {
+    @apply relative overflow-hidden bg-white border border-charcoal-100
+           transition-all duration-500 hover:border-gold-500 hover:shadow-xl;
+  }
+
+  .nav-link {
+    @apply font-sans text-sm font-medium tracking-wider uppercase transition-colors duration-200;
+  }
+
+  .input-field {
+    @apply w-full bg-transparent border-b border-charcoal-200 py-3 px-0
+           font-sans text-sm text-charcoal-800 placeholder:text-charcoal-400
+           focus:outline-none focus:border-gold-500 transition-colors duration-200;
+  }
+
+  .container-page {
+    @apply max-w-7xl mx-auto px-6 lg:px-8;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #F5F5F5; }
+::-webkit-scrollbar-thumb { background: #C9A84C; border-radius: 3px; }
