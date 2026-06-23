@@ -128,7 +128,7 @@ export default function Services() {
                       </li>
                     ))}
                   </ul>
-                  <Link to="/contact" className="btn-primary w-fit">
+                  <Link to="/quote-contact" className="btn-primary w-fit">
                     Request This Service <ArrowRight size={15} />
                   </Link>
                 </div>
@@ -173,7 +173,7 @@ export default function Services() {
             Get a personalised quote within 2 hours. We're available 7 days a week.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/contact" className="btn-primary">
+            <Link to="/quote-contact" className="btn-primary">
               Get a Quote <ArrowRight size={15} />
             </Link>
             <a

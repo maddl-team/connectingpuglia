@@ -8,28 +8,28 @@ const services = [
     icon: <Car size={28} strokeWidth={1} />,
     title: 'Airport & Port Transfers',
     description: 'Seamless private transfers from Bari, Brindisi, and Taranto airports and ports. Meet & greet, flight monitoring, and door-to-door service.',
-    href: '/services#airport',
+    href: '/airport-transfers',
   },
   {
     id: 'hourly',
     icon: <Clock size={28} strokeWidth={1} />,
     title: 'Hourly Chauffeur',
     description: 'Dedicated professional chauffeur at your disposal. Perfect for business travel, winery visits, or exploring Puglia at your own pace.',
-    href: '/services#hourly',
+    href: '/quote-contact?service=Hourly+Chauffeur',
   },
   {
     id: 'tours',
     icon: <MapPin size={28} strokeWidth={1} />,
     title: 'Private Tours',
     description: 'Curated private experiences to Alberobello, Valle d\'Itria, Lecce, Matera, and beyond — guided or self-guided with your personal driver.',
-    href: '/tours',
+    href: '/private-tours-puglia',
   },
   {
     id: 'wedding',
     icon: <Star size={28} strokeWidth={1} />,
     title: 'Wedding & Events',
     description: 'Elegant transport solutions for destination weddings and special events at Puglia\'s finest masserie and venues.',
-    href: '/services#wedding',
+    href: '/wedding-transfer-puglia',
   },
 ]
 
@@ -97,10 +97,10 @@ export default function Home() {
             Premium licensed chauffeur transfers and curated private tours — crafted for guests who seek the authentic, unhurried soul of southern Italy.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/contact" className="btn-primary">
+            <Link to="/quote-contact" className="btn-primary">
               Request a Transfer <ArrowRight size={16} />
             </Link>
-            <Link to="/tours" className="btn-ghost-light">
+            <Link to="/private-tours-puglia" className="btn-ghost-light">
               Explore Tours
             </Link>
           </div>
@@ -227,19 +227,19 @@ export default function Home() {
                 title: 'Valle d\'Itria & Trulli',
                 sub: 'Alberobello · Locorotondo · Cisternino',
                 img: '/images/home/home-card-1.png',
-                href: '/tours#itria',
+                href: '/tour-valle-ditria',
               },
               {
                 title: 'The Baroque City of Lecce',
                 sub: 'Lecce · Otranto · Gallipoli',
                 img: '/images/home/home-card-2.png',
-                href: '/tours#lecce',
+                href: '/tour-salento',
               },
               {
                 title: 'The White City — Ostuni',
                 sub: 'Ostuni · Fasano · Monopoli',
                 img: '/images/home/home-card-3.png',
-                href: '/tours#ostuni',
+                href: '/transfer-to-ostuni',
               },
             ].map((dest) => (
               <Link
@@ -265,7 +265,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-10">
-            <Link to="/tours" className="btn-outline border-white/30 text-white hover:bg-white hover:text-charcoal-900">
+            <Link to="/private-tours-puglia" className="btn-outline border-white/30 text-white hover:bg-white hover:text-charcoal-900">
               View All Experiences <ArrowRight size={15} />
             </Link>
           </div>
@@ -317,7 +317,7 @@ export default function Home() {
             Get in touch for a personalised quote. Transfers, day tours, multi-day itineraries — we handle it all with grace.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/contact" className="btn-primary">
+            <Link to="/quote-contact" className="btn-primary">
               Request a Quote <ArrowRight size={16} />
             </Link>
             <a

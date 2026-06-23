@@ -147,7 +147,7 @@ export default function Tours() {
                       </li>
                     ))}
                   </ul>
-                  <Link to="/contact" className="btn-primary text-xs py-3 w-full justify-center">
+                  <Link to="/quote-contact" className="btn-primary text-xs py-3 w-full justify-center">
                     Enquire About This Tour <ArrowRight size={13} />
                   </Link>
                 </div>
@@ -168,7 +168,7 @@ export default function Tours() {
           <p className="font-sans text-white/60 max-w-md mx-auto mb-10">
             Tell us your interests, accommodation, and dates — and we'll craft a private Puglia experience that's uniquely yours.
           </p>
-          <Link to="/contact" className="btn-primary">
+          <Link to="/quote-contact" className="btn-primary">
             Start Planning <ArrowRight size={15} />
           </Link>
         </div>

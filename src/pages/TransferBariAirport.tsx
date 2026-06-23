@@ -187,7 +187,7 @@ export default function TransferBariAirport() {
             Your driver is waiting at arrivals. Name sign, luggage assistance, real-time flight monitoring. ConnectinPuglia takes you directly to your destination across Puglia — no meters, no sharing, no surprises.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link to="/contact?service=Airport+Transfer&airport=BRI" className="btn-primary">
+            <Link to="/quote-contact?service=Airport+Transfer&airport=BRI" className="btn-primary">
               Book This Transfer <ArrowRight size={16} />
             </Link>
             <a
@@ -304,7 +304,7 @@ export default function TransferBariAirport() {
                   Staying at a property not listed here? We cover the entire region — just let us know your accommodation.
                 </p>
                 <Link
-                  to="/contact?service=Airport+Transfer&airport=BRI"
+                  to="/quote-contact?service=Airport+Transfer&airport=BRI"
                   className="flex items-center gap-2 font-sans text-xs font-medium tracking-widest uppercase text-gold-400 hover:text-gold-300 transition-colors"
                 >
                   Request a Custom Quote <ArrowRight size={13} />
@@ -388,7 +388,7 @@ export default function TransferBariAirport() {
             Fixed price, professional service, door to door. Request your quote now — we respond within 2 hours.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/contact?service=Airport+Transfer&airport=BRI" className="btn-primary">
+            <Link to="/quote-contact?service=Airport+Transfer&airport=BRI" className="btn-primary">
               Request a Quote <ArrowRight size={15} />
             </Link>
             <a
@@ -411,10 +411,10 @@ export default function TransferBariAirport() {
           <div className="flex flex-wrap justify-center gap-3">
             {[
               { label: 'Transfer from Brindisi Airport', to: '/transfer-from-brindisi-airport' },
-              { label: 'Private Tours in Puglia', to: '/tours' },
-              { label: 'Hourly Chauffeur', to: '/services#hourly' },
-              { label: 'Wedding Transport', to: '/services#wedding' },
-              { label: 'All Services', to: '/services' },
+              { label: 'Private Tours in Puglia', to: '/private-tours-puglia' },
+              { label: 'Hourly Chauffeur', to: '/quote-contact?service=Hourly+Chauffeur' },
+              { label: 'Wedding Transport', to: '/wedding-transfer-puglia' },
+              { label: 'All Services', to: '/airport-transfers' },
             ].map((link) => (
               <Link
                 key={link.to}

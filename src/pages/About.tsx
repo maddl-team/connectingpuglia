@@ -129,7 +129,7 @@ export default function About() {
           <p className="font-sans text-white/60 max-w-md mx-auto mb-8">
             Get in touch and let us plan a seamless, memorable experience for you.
           </p>
-          <Link to="/contact" className="btn-primary">
+          <Link to="/quote-contact" className="btn-primary">
             Contact Us <ArrowRight size={15} />
           </Link>
         </div>
