@@ -11,7 +11,7 @@ const localBusinessSchema = {
   name: 'ConnectinPuglia',
   description: 'Premium NCC licensed private transfer and tour operator in Puglia, southern Italy.',
   url: 'https://connectinpuglia.com',
-  telephone: '+393921234567',
+  telephone: '+393773096638',
   email: 'info@connectinpuglia.com',
   address: {
     '@type': 'PostalAddress',

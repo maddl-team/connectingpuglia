@@ -191,7 +191,7 @@ export default function TransferBariAirport() {
               Book This Transfer <ArrowRight size={16} />
             </Link>
             <a
-              href="https://wa.me/393921234567?text=Hello%2C%20I%27d%20like%20to%20book%20a%20private%20transfer%20from%20Bari%20Airport%20(BRI)"
+              href="https://wa.me/393773096638?text=Hello%2C%20I%27d%20like%20to%20book%20a%20private%20transfer%20from%20Bari%20Airport%20(BRI)"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-ghost-light"
@@ -329,7 +329,7 @@ export default function TransferBariAirport() {
                 Everything you need to know about your private transfer from Bari Airport.
               </p>
               <a
-                href="https://wa.me/393921234567?text=Hello%2C%20I%20have%20a%20question%20about%20a%20transfer%20from%20Bari%20Airport"
+                href="https://wa.me/393773096638?text=Hello%2C%20I%20have%20a%20question%20about%20a%20transfer%20from%20Bari%20Airport"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 font-sans text-sm font-medium text-gold-600 hover:text-gold-700 transition-colors"
@@ -392,7 +392,7 @@ export default function TransferBariAirport() {
               Request a Quote <ArrowRight size={15} />
             </Link>
             <a
-              href="tel:+393921234567"
+              href="tel:+393773096638"
               className="flex items-center gap-2 font-sans text-sm font-medium text-white/70 hover:text-white transition-colors"
             >
               <Phone size={15} strokeWidth={1.5} />

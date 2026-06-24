@@ -71,7 +71,7 @@ function TourPage({
           <p className="font-sans font-light text-white/80 text-lg leading-relaxed max-w-2xl mb-10">{intro}</p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link to="/quote-contact" className="btn-primary">Enquire About This Tour <ArrowRight size={16} /></Link>
-            <a href="https://wa.me/393921234567" target="_blank" rel="noopener noreferrer" className="btn-ghost-light">
+            <a href="https://wa.me/393773096638" target="_blank" rel="noopener noreferrer" className="btn-ghost-light">
               <MessageCircle size={15} strokeWidth={1.5} /> WhatsApp Us
             </a>
           </div>
@@ -214,7 +214,7 @@ function TourPage({
           <p className="font-sans text-white/60 max-w-md mx-auto mb-8 leading-relaxed">Tell us your dates, group size, and pick-up location. We confirm availability and price within 2 hours.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link to="/quote-contact" className="btn-primary">Request a Tour Quote <ArrowRight size={15} /></Link>
-            <a href="https://wa.me/393921234567" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-sans text-sm font-medium text-white/70 hover:text-white transition-colors">
+            <a href="https://wa.me/393773096638" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-sans text-sm font-medium text-white/70 hover:text-white transition-colors">
               <MessageCircle size={15} strokeWidth={1.5} /> WhatsApp Us
             </a>
           </div>

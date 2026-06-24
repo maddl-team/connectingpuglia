@@ -80,23 +80,23 @@ export default function Contact() {
               <div>
                 <h2 className="font-serif text-2xl font-light text-charcoal-900 mb-6">Contact Details</h2>
                 <div className="flex flex-col gap-5">
-                  <a href="https://wa.me/393921234567" target="_blank" rel="noopener noreferrer"
+                  <a href="https://wa.me/393773096638" target="_blank" rel="noopener noreferrer"
                     className="flex items-start gap-4 group">
                     <div className="flex-none w-10 h-10 bg-gold-50 flex items-center justify-center text-gold-600">
                       <MessageCircle size={18} strokeWidth={1.5} />
                     </div>
                     <div>
                       <p className="font-sans text-xs tracking-widest uppercase text-charcoal-400 mb-0.5">WhatsApp (Fastest)</p>
-                      <p className="font-sans text-sm font-medium text-charcoal-800 group-hover:text-gold-600 transition-colors">+39 392 123 4567</p>
+                      <p className="font-sans text-sm font-medium text-charcoal-800 group-hover:text-gold-600 transition-colors">+39 377 309 6638</p>
                     </div>
                   </a>
-                  <a href="tel:+393921234567" className="flex items-start gap-4 group">
+                  <a href="tel:+393773096638" className="flex items-start gap-4 group">
                     <div className="flex-none w-10 h-10 bg-gold-50 flex items-center justify-center text-gold-600">
                       <Phone size={18} strokeWidth={1.5} />
                     </div>
                     <div>
                       <p className="font-sans text-xs tracking-widest uppercase text-charcoal-400 mb-0.5">Telephone</p>
-                      <p className="font-sans text-sm font-medium text-charcoal-800 group-hover:text-gold-600 transition-colors">+39 392 123 4567</p>
+                      <p className="font-sans text-sm font-medium text-charcoal-800 group-hover:text-gold-600 transition-colors">+39 377 309 6638</p>
                     </div>
                   </a>
                   <a href="mailto:info@connectinpuglia.com" className="flex items-start gap-4 group">
@@ -127,7 +127,7 @@ export default function Contact() {
                   For the fastest response, send us a WhatsApp message. We typically respond within 30 minutes.
                 </p>
                 <a
-                  href="https://wa.me/393921234567?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20a%20transfer%20or%20tour%20in%20Puglia"
+                  href="https://wa.me/393773096638?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20a%20transfer%20or%20tour%20in%20Puglia"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 font-sans text-sm font-medium tracking-widest uppercase text-gold-400 hover:text-gold-300 transition-colors"

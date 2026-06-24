@@ -54,9 +54,9 @@ export default function Footer() {
               Your premium private transfer and tour partner in Puglia — professional, warm, and deeply local.
             </p>
             <div className="flex flex-col gap-3">
-              <a href="tel:+393921234567" className="flex items-center gap-3 text-sm text-white/60 hover:text-gold-400 transition-colors">
+              <a href="tel:+393773096638" className="flex items-center gap-3 text-sm text-white/60 hover:text-gold-400 transition-colors">
                 <Phone size={14} strokeWidth={1.5} />
-                +39 392 123 4567
+                +39 377 309 6638
               </a>
               <a href="mailto:info@connectinpuglia.com" className="flex items-center gap-3 text-sm text-white/60 hover:text-gold-400 transition-colors">
                 <Mail size={14} strokeWidth={1.5} />

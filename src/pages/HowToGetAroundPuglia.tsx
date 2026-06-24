@@ -338,7 +338,7 @@ export default function HowToGetAroundPuglia() {
                 Request a Transfer Quote <ArrowRight size={15} />
               </Link>
               <a
-                href="https://wa.me/393921234567?text=Hello%2C%20I%27m%20planning%20a%20trip%20to%20Puglia%20and%20would%20like%20advice%20on%20transport"
+                href="https://wa.me/393773096638?text=Hello%2C%20I%27m%20planning%20a%20trip%20to%20Puglia%20and%20would%20like%20advice%20on%20transport"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 font-sans text-sm font-medium text-white/70 hover:text-white transition-colors"

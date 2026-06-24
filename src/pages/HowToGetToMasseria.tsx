@@ -364,7 +364,7 @@ export default function HowToGetToMasseria() {
                 Request a Transfer <ArrowRight size={15} />
               </Link>
               <a
-                href="https://wa.me/393921234567?text=Hello%2C%20I%27d%20like%20a%20transfer%20to%20my%20masseria%20in%20Puglia"
+                href="https://wa.me/393773096638?text=Hello%2C%20I%27d%20like%20a%20transfer%20to%20my%20masseria%20in%20Puglia"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 font-sans text-sm font-medium text-white/70 hover:text-white transition-colors"
