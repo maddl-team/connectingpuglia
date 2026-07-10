@@ -1,19 +1,17 @@
 import { LOGO_ALT, LOGO_SRC } from '../lib/brand'
 
 type BrandLogoProps = {
-  height?: number
   className?: string
 }
 
-export default function BrandLogo({ height = 40, className = '' }: BrandLogoProps) {
+export default function BrandLogo({ className = 'h-16 w-auto' }: BrandLogoProps) {
   return (
     <img
       src={LOGO_SRC}
       alt={LOGO_ALT}
       width={668}
       height={373}
-      className={`w-auto object-contain ${className}`}
-      style={{ height }}
+      className={`object-contain ${className}`}
     />
   )
 }

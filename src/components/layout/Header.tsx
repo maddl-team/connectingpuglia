@@ -144,14 +144,14 @@ export default function Header() {
       <header
         className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
           scrolled
-            ? 'bg-charcoal-900/98 backdrop-blur-sm shadow-lg py-2'
-            : 'bg-transparent py-4'
+            ? 'bg-charcoal-900/98 backdrop-blur-sm shadow-lg py-3'
+            : 'bg-transparent py-5'
         }`}
       >
         <div className="container-page flex items-center justify-between gap-6">
           {/* Logo */}
           <Link to="/" className="flex-none group" aria-label="ConnectinPuglia home">
-            <BrandLogo height={38} className="group-hover:opacity-90 transition-opacity duration-300" />
+            <BrandLogo className="h-14 sm:h-16 md:h-[4.75rem] w-auto group-hover:opacity-90 transition-opacity duration-300" />
           </Link>
 
           {/* CTA — always visible */}
@@ -181,7 +181,7 @@ export default function Header() {
       >
         <div className="flex flex-col gap-5 mt-6">
           <Link to="/" onClick={() => setMenuOpen(false)} className="mb-2 self-start">
-            <BrandLogo height={44} />
+            <BrandLogo className="h-16 w-auto" />
           </Link>
           {navItems.map((item) => (
             <DrawerNavItem key={item.label} item={item} onClose={() => setMenuOpen(false)} />

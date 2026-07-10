@@ -45,7 +45,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link to="/" className="inline-block mb-6" aria-label="ConnectinPuglia home">
-              <BrandLogo height={52} />
+              <BrandLogo className="h-20 sm:h-24 w-auto" />
             </Link>
             <p className="font-sans text-sm text-white/60 leading-relaxed max-w-xs mb-6">
               Your premium private transfer and tour partner in Puglia — professional, warm, and deeply local.
