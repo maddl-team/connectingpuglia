@@ -45,6 +45,12 @@ function outputPath(route: string): string {
 }
 
 async function main() {
+  if (process.env.VERCEL) {
+    console.log('Skipping prerender on Vercel (Puppeteer preview is not available in CI).')
+    console.log('Run "npm run build:prerender" locally for static HTML generation.')
+    return
+  }
+
   const preview = await startPreview()
   const browser = await puppeteer.launch({ headless: true })
 

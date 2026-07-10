@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "dev:full": "vercel dev",
-    "build": "tsc && vite build && tsx scripts/prerender.ts",
+    "build": "tsc && vite build",
+    "build:prerender": "npm run build && tsx scripts/prerender.ts",
     "optimize-images": "tsx scripts/optimize-images.ts",
     "preview": "vite preview"
   },
