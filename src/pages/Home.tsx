@@ -1,6 +1,8 @@
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Car, MapPin, Star, Shield, Clock, Users } from 'lucide-react'
+import HeroImage from '../components/HeroImage'
+import TwitterMeta from '../components/TwitterMeta'
 
 const services = [
   {
@@ -65,23 +67,26 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Private Transfers &amp; Tours in Puglia | Connect in Puglia</title>
+        <title>Private Transfers &amp; Tours in Puglia | ConnectinPuglia</title>
         <meta name="description" content="Premium NCC licensed chauffeur service and private tour operator in Puglia, southern Italy. Airport transfers, private tours to Alberobello, Lecce, Ostuni, and beyond." />
-        <meta property="og:title" content="Private Transfers & Tours in Puglia | Connect in Puglia" />
+        <meta property="og:title" content="Private Transfers & Tours in Puglia | ConnectinPuglia" />
         <meta property="og:description" content="Premium NCC licensed chauffeur service and private tour operator in Puglia, southern Italy." />
         <meta property="og:url" content="https://connectinpuglia.com/" />
-        <meta property="og:image" content="https://connectinpuglia.com/images/home/home-og.png" />
+        <meta property="og:image" content="https://connectinpuglia.com/images/home/home-og.webp" />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://connectinpuglia.com/" />
       </Helmet>
+      <TwitterMeta
+        title="Private Transfers & Tours in Puglia | ConnectinPuglia"
+        description="Premium NCC licensed chauffeur service and private tour operator in Puglia, southern Italy."
+        image="https://connectinpuglia.com/images/home/home-og.webp"
+      />
 
       {/* HERO */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url('/images/home/home-hero.png')`,
-          }}
+        <HeroImage
+          src="/images/home/home-hero.webp"
+          alt="Your Private Gateway to Puglia — luxury transfers and tours in southern Italy"
         />
         <div className="absolute inset-0 bg-hero-overlay" />
 
@@ -199,7 +204,7 @@ export default function Home() {
             <div className="relative">
               <div
                 className="aspect-[4/5] bg-cover bg-center"
-                style={{ backgroundImage: `url('/images/home/home-card-4.png')` }}
+                style={{ backgroundImage: `url('/images/home/home-card-4.webp')` }}
               />
               <div className="absolute -bottom-6 -left-6 bg-charcoal-900 text-white p-6 w-48">
                 <span className="font-serif text-4xl font-light text-gold-400">10+</span>
@@ -226,19 +231,19 @@ export default function Home() {
               {
                 title: 'Valle d\'Itria & Trulli',
                 sub: 'Alberobello · Locorotondo · Cisternino',
-                img: '/images/home/home-card-1.png',
+                img: '/images/home/home-card-1.webp',
                 href: '/tour-valle-ditria',
               },
               {
                 title: 'The Baroque City of Lecce',
                 sub: 'Lecce · Otranto · Gallipoli',
-                img: '/images/home/home-card-2.png',
+                img: '/images/home/home-card-2.webp',
                 href: '/tour-salento',
               },
               {
                 title: 'The White City — Ostuni',
                 sub: 'Ostuni · Fasano · Monopoli',
-                img: '/images/home/home-card-3.png',
+                img: '/images/home/home-card-3.webp',
                 href: '/transfer-to-ostuni',
               },
             ].map((dest) => (
@@ -305,7 +310,7 @@ export default function Home() {
       {/* CTA BANNER */}
       <section
         className="relative py-32 bg-cover bg-center"
-        style={{ backgroundImage: `url('/images/home/home-card-5.png')` }}
+        style={{ backgroundImage: `url('/images/home/home-card-5.webp')` }}
       >
         <div className="absolute inset-0 bg-charcoal-900/80" />
         <div className="relative z-10 container-page text-center text-white">

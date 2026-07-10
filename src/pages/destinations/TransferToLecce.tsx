@@ -3,10 +3,10 @@ import DestinationTransferPage from '../../components/DestinationTransferPage'
 export default function TransferToLecce() {
   return (
     <DestinationTransferPage
-      metaTitle="Private Transfer to Lecce from Airport | Connect in Puglia"
+      metaTitle="Private Transfer to Lecce from Airport | ConnectinPuglia"
       metaDesc="Private transfer to Lecce from Bari or Brindisi airport. Fixed price, meet and greet, direct to your hotel in the Baroque capital of the South. ConnectinPuglia."
       canonical="https://connectinpuglia.com/transfer-to-lecce"
-      heroImg="/images/destinations/lecce-hero.png"
+      heroImg="/images/destinations/lecce-hero.webp"
       h1="Private Transfer to Lecce — The Florence of the South."
       subheadline="Your driver meets you at the airport and delivers you directly to your Lecce hotel — navigating the ZTL on your behalf, fixed price confirmed before you travel."
       routes={[

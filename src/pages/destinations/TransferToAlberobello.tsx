@@ -3,10 +3,10 @@ import DestinationTransferPage from '../../components/DestinationTransferPage'
 export default function TransferToAlberobello() {
   return (
     <DestinationTransferPage
-      metaTitle="Private Transfer to Alberobello & Valle d'Itria | Connect in Puglia"
+      metaTitle="Private Transfer to Alberobello & Valle d'Itria | ConnectinPuglia"
       metaDesc="Private transfer to Alberobello and the Valle d'Itria from Bari or Brindisi airports. Fixed price, door to door, luxury fleet. ConnectinPuglia."
       canonical="https://connectinpuglia.com/transfer-to-alberobello-valle-ditria"
-      heroImg="/images/destinations/alberobello-hero.png"
+      heroImg="/images/destinations/alberobello-hero.webp"
       h1="Private Transfer to Alberobello & Valle d'Itria — Into the Heart of Puglia."
       subheadline="Your driver meets you at the airport and delivers you directly to your trullo, masseria, or hotel — no GPS confusion in the UNESCO trulli district, no ZTL worries."
       routes={[

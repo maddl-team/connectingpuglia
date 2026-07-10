@@ -15,15 +15,41 @@ const localBusinessSchema = {
   email: 'info@connectinpuglia.com',
   address: {
     '@type': 'PostalAddress',
+    addressLocality: 'Puglia',
     addressRegion: 'Puglia',
     addressCountry: 'IT',
   },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 41.0,
+    longitude: 17.0,
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: [
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+        'Sunday',
+      ],
+      opens: '00:00',
+      closes: '23:59',
+    },
+  ],
+  sameAs: [
+    'https://instagram.com/connectinpuglia',
+    'https://facebook.com/connectinpuglia',
+  ],
   areaServed: {
     '@type': 'State',
     name: 'Puglia',
   },
   priceRange: '€€€',
-  image: 'https://connectinpuglia.com/images/site-og-default.png',
+  image: 'https://connectinpuglia.com/images/site-og-default.webp',
 }
 
 export default function Layout() {

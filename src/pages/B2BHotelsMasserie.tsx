@@ -1,6 +1,8 @@
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Building2, Users, Briefcase, Heart, Star } from 'lucide-react'
+import HeroImage from '../components/HeroImage'
+import TwitterMeta from '../components/TwitterMeta'
 
 const segments = [
   { icon: <Star size={22} strokeWidth={1} />, title: 'Masserie & Resorts', desc: 'Dedicated ground transport partner for your property. Reliable, punctual, professional — always a reflection of your brand.', to: '/b2b-masserie-resorts' },
@@ -14,20 +16,23 @@ export default function B2BHotelsMasserie() {
   return (
     <>
       <Helmet>
-        <title>Ground Transport Partner for Puglia Hotels &amp; Masserie | Connect in Puglia</title>
+        <title>Ground Transport Partner for Puglia Hotels &amp; Masserie | ConnectinPuglia</title>
         <meta name="description" content="Trusted ground transport partner for hotels, masserie, DMCs, travel designers and wedding planners in Puglia. NCC licensed, professional, brand-compatible service." />
         <link rel="canonical" href="https://connectinpuglia.com/b2b-hotels-masserie" />
-        <meta property="og:title" content="Ground Transport Partner for Puglia Hotels & Masserie | Connect in Puglia" />
+        <meta property="og:title" content="Ground Transport Partner for Puglia Hotels & Masserie | ConnectinPuglia" />
         <meta property="og:description" content="Trusted ground transport partner for hotels, masserie, DMCs, travel designers and wedding planners in Puglia. NCC licensed, professional, brand-compatible service." />
         <meta property="og:url" content="https://connectinpuglia.com/b2b-hotels-masserie" />
-        <meta property="og:image" content="https://connectinpuglia.com/images/main/b2b-hotels-masserie-og.png" />
+        <meta property="og:image" content="https://connectinpuglia.com/images/main/b2b-hotels-masserie-og.webp" />
         <meta property="og:type" content="website" />
       </Helmet>
+      <TwitterMeta
+        title="Ground Transport Partner for Puglia Hotels & Masserie | ConnectinPuglia"
+        description="Trusted ground transport partner for hotels, masserie, DMCs, travel designers and wedding planners in Puglia. NCC licensed, professional, brand-compatible service."
+        image="https://connectinpuglia.com/images/main/b2b-hotels-masserie-og.webp"
+      />
 
-      <section
-        className="relative pt-36 pb-24 bg-cover bg-center text-white"
-        style={{ backgroundImage: `url('/images/main/b2b-hotels-masserie-hero.png')` }}
-      >
+      <section className="relative overflow-hidden pt-36 pb-24 text-white">
+        <HeroImage src="/images/main/b2b-hotels-masserie-hero.webp" alt="B2B Partners — Hotels, Masserie & DMCs" />
         <div className="absolute inset-0 bg-charcoal-900/68" />
         <div className="relative z-10 container-page">
           <p className="section-label text-gold-400 mb-4">Trade & Professional Partners</p>

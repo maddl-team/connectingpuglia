@@ -2,6 +2,8 @@ import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { ArrowRight, Clock, Users, Star, CheckCircle, MapPin, ChevronDown, ChevronUp, MessageCircle } from 'lucide-react'
+import HeroImage from '../components/HeroImage'
+import TwitterMeta from '../components/TwitterMeta'
 
 const tours = [
   {
@@ -10,7 +12,7 @@ const tours = [
     tags: ['Trulli', 'Hilltop towns', 'Olive groves'],
     desc: "Alberobello's UNESCO trulli district, Locorotondo, Cisternino, and the valleys of the Murgia plateau.",
     to: '/tour-valle-ditria',
-    img: '/images/main/private-tours-puglia-card-1.png',
+    img: '/images/main/private-tours-puglia-card-1.webp',
     badge: 'Most Popular',
   },
   {
@@ -19,7 +21,7 @@ const tours = [
     tags: ['Cantinas', 'Primitivo', 'Negroamaro'],
     desc: 'Boutique winery visits with guided cellar tours and structured tastings of Puglia\'s finest Primitivo and Negroamaro.',
     to: '/tour-wine-puglia',
-    img: '/images/main/private-tours-puglia-card-2.png',
+    img: '/images/main/private-tours-puglia-card-2.webp',
     badge: 'Gastronomy',
   },
   {
@@ -28,7 +30,7 @@ const tours = [
     tags: ['Lecce', 'Gallipoli', 'Otranto'],
     desc: "Lecce's Baroque stonework, Otranto's Byzantine mosaics, and Gallipoli's fortified island — the full Salento experience.",
     to: '/tour-salento',
-    img: '/images/main/private-tours-puglia-card-3.png',
+    img: '/images/main/private-tours-puglia-card-3.webp',
   },
   {
     title: 'Baroque Puglia',
@@ -36,7 +38,7 @@ const tours = [
     tags: ['Lecce', 'Martina Franca', 'Locorotondo'],
     desc: 'A curated tour of the finest Baroque architecture in the south — golden stone, ornate facades, and operatic heritage.',
     to: '/tour-baroque-puglia',
-    img: '/images/main/private-tours-puglia-card-4.png',
+    img: '/images/main/private-tours-puglia-card-4.webp',
   },
   {
     title: 'Food & Olive Oil',
@@ -44,7 +46,7 @@ const tours = [
     tags: ['Producers', 'Markets', 'Pasta makers'],
     desc: 'Frantoio olive oil mill, burrata dairy, artisan orecchiette makers, and the Murgia plateau food producers.',
     to: '/tour-food-olive-oil',
-    img: '/images/main/private-tours-puglia-card-5.png',
+    img: '/images/main/private-tours-puglia-card-5.webp',
     badge: 'Food & Produce',
   },
 ]
@@ -87,21 +89,27 @@ export default function PrivateToursPuglia() {
   return (
     <>
       <Helmet>
-        <title>Private Tours in Puglia with Chauffeur | Connect in Puglia</title>
+        <title>Private Tours in Puglia with Chauffeur | ConnectinPuglia</title>
         <meta name="description" content="Private tours in Puglia with a professional local chauffeur. Valle d'Itria, Salento, wine tours, food tours, and day trips to Matera. Fixed rates. Book your private tour now." />
         <link rel="canonical" href="https://connectinpuglia.com/private-tours-puglia" />
-        <meta property="og:title" content="Private Tours in Puglia with Chauffeur | Connect in Puglia" />
+        <meta property="og:title" content="Private Tours in Puglia with Chauffeur | ConnectinPuglia" />
         <meta property="og:description" content="Private tours in Puglia with a professional local chauffeur. Valle d'Itria, Salento, wine tours, food tours, and day trips to Matera. Fixed rates." />
         <meta property="og:url" content="https://connectinpuglia.com/private-tours-puglia" />
-        <meta property="og:image" content="https://connectinpuglia.com/images/main/private-tours-puglia-og.png" />
+        <meta property="og:image" content="https://connectinpuglia.com/images/main/private-tours-puglia-og.webp" />
         <meta property="og:type" content="website" />
       </Helmet>
+      <TwitterMeta
+        title="Private Tours in Puglia with Chauffeur | ConnectinPuglia"
+        description="Private tours in Puglia with a professional local chauffeur. Valle d'Itria, Salento, wine tours, food tours, and day trips to Matera. Fixed rates."
+        image="https://connectinpuglia.com/images/main/private-tours-puglia-og.webp"
+      />
 
       {/* HERO */}
-      <section
-        className="relative min-h-[70vh] flex items-center overflow-hidden"
-        style={{ backgroundImage: `url('/images/main/private-tours-puglia-hero.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-      >
+      <section className="relative min-h-[70vh] flex items-center overflow-hidden">
+        <HeroImage
+          src="/images/main/private-tours-puglia-hero.webp"
+          alt="Private Tours in Puglia — Explore at Your Own Pace"
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-charcoal-950/90 via-charcoal-950/68 to-charcoal-950/20" />
         <div className="relative z-10 container-page pt-28 pb-20 text-white max-w-3xl">
           <p className="section-label text-gold-400 mb-4">Exclusively Private · Your Group Only</p>

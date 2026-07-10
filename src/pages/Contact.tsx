@@ -1,6 +1,9 @@
 import { Helmet } from 'react-helmet-async'
-import { useState, type FormEvent } from 'react'
-import { Phone, Mail, MapPin, MessageCircle, CheckCircle } from 'lucide-react'
+import { useEffect, useState, type FormEvent } from 'react'
+import { useSearchParams } from 'react-router-dom'
+import { Phone, Mail, MapPin, MessageCircle, CheckCircle, AlertCircle, Loader2 } from 'lucide-react'
+import HeroImage from '../components/HeroImage'
+import TwitterMeta from '../components/TwitterMeta'
 
 type FormData = {
   name: string
@@ -10,6 +13,7 @@ type FormData = {
   date: string
   guests: string
   message: string
+  airport: string
 }
 
 const initialForm: FormData = {
@@ -20,44 +24,103 @@ const initialForm: FormData = {
   date: '',
   guests: '',
   message: '',
+  airport: '',
+}
+
+const SERVICE_OPTIONS = [
+  'Airport Transfer',
+  'Port / Ferry Transfer',
+  'Hourly Chauffeur',
+  'Private Tour',
+  'Wedding / Event',
+  'Custom Multi-Day Itinerary',
+  'Other Enquiry',
+] as const
+
+function mapServiceParam(value: string | null): string {
+  if (!value) return ''
+  const decoded = decodeURIComponent(value.replace(/\+/g, ' '))
+  if (SERVICE_OPTIONS.includes(decoded as (typeof SERVICE_OPTIONS)[number])) return decoded
+  if (decoded === 'Port Transfer') return 'Port / Ferry Transfer'
+  return decoded
 }
 
 export default function Contact() {
+  const [searchParams] = useSearchParams()
   const [form, setForm] = useState<FormData>(initialForm)
   const [submitted, setSubmitted] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
+  const [error, setError] = useState('')
+
+  useEffect(() => {
+    const service = mapServiceParam(searchParams.get('service'))
+    const airport = searchParams.get('airport')?.trim() ?? ''
+    if (service || airport) {
+      setForm((prev) => ({
+        ...prev,
+        ...(service ? { service } : {}),
+        ...(airport ? { airport } : {}),
+      }))
+    }
+  }, [searchParams])
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }))
+    if (error) setError('')
   }
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    const subject = encodeURIComponent(`ConnectinPuglia Enquiry — ${form.service || 'General'} — ${form.date || 'TBD'}`)
-    const body = encodeURIComponent(
-      `Name: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\nService: ${form.service}\nDate: ${form.date}\nGuests: ${form.guests}\n\nMessage:\n${form.message}`
-    )
-    window.location.href = `mailto:info@connectinpuglia.com?subject=${subject}&body=${body}`
-    setSubmitted(true)
+    setSubmitting(true)
+    setError('')
+
+    const formEl = e.currentTarget
+    const honeypot = (formEl.elements.namedItem('website') as HTMLInputElement | null)?.value ?? ''
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...form, website: honeypot }),
+      })
+
+      const result = await response.json().catch(() => ({}))
+
+      if (!response.ok) {
+        setError(result.error ?? 'Unable to send your enquiry. Please try WhatsApp or email us directly.')
+        return
+      }
+
+      setSubmitted(true)
+      setForm(initialForm)
+    } catch {
+      setError('Network error. Please check your connection or contact us on WhatsApp.')
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   return (
     <>
       <Helmet>
-        <title>Book a Transfer or Tour | Connect in Puglia</title>
+        <title>Book a Transfer or Tour | ConnectinPuglia</title>
         <meta name="description" content="Request a quote for private transfers and tours in Puglia. Fixed price, no surprises. ConnectinPuglia — Puglia's luxury transfer specialist." />
         <link rel="canonical" href="https://connectinpuglia.com/quote-contact" />
-        <meta property="og:title" content="Book a Transfer or Tour | Connect in Puglia" />
+        <meta property="og:title" content="Book a Transfer or Tour | ConnectinPuglia" />
         <meta property="og:description" content="Request a quote for private transfers and tours in Puglia. Fixed price, no surprises. ConnectinPuglia — Puglia's luxury transfer specialist." />
         <meta property="og:url" content="https://connectinpuglia.com/quote-contact" />
-        <meta property="og:image" content="https://connectinpuglia.com/images/main/contact-og.png" />
+        <meta property="og:image" content="https://connectinpuglia.com/images/main/contact-og.webp" />
         <meta property="og:type" content="website" />
       </Helmet>
+      <TwitterMeta
+        title="Book a Transfer or Tour | ConnectinPuglia"
+        description="Request a quote for private transfers and tours in Puglia. Fixed price, no surprises. ConnectinPuglia — Puglia's luxury transfer specialist."
+        image="https://connectinpuglia.com/images/main/contact-og.webp"
+      />
 
       {/* Page Header */}
-      <section
-        className="relative bg-charcoal-900 pt-36 pb-20 bg-cover bg-center"
-        style={{ backgroundImage: `url('/images/main/contact-hero.png')` }}
-      >
+      <section className="relative overflow-hidden bg-charcoal-900 pt-36 pb-20">
+        <HeroImage src="/images/main/contact-hero.webp" alt="Book Your Experience" />
         <div className="absolute inset-0 bg-charcoal-900/75" />
         <div className="relative z-10 container-page text-white">
           <p className="section-label text-gold-400 mb-4">Get in Touch</p>
@@ -143,9 +206,9 @@ export default function Contact() {
               {submitted ? (
                 <div className="flex flex-col items-center justify-center text-center h-full min-h-80 gap-4">
                   <CheckCircle size={48} strokeWidth={1} className="text-gold-500" />
-                  <h3 className="font-serif text-2xl font-light text-charcoal-900">Request Sent</h3>
+                  <h3 className="font-serif text-2xl font-light text-charcoal-900">Enquiry Sent</h3>
                   <p className="font-sans text-sm text-charcoal-500 max-w-sm">
-                    Your email client has opened. Once you send the email, we'll respond with a personalised quote within 2 hours.
+                    Thank you — your request has been received. We'll respond with a personalised quote within 2 hours.
                   </p>
                   <button onClick={() => setSubmitted(false)} className="btn-outline mt-4">
                     Send Another Enquiry
@@ -153,44 +216,57 @@ export default function Contact() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="flex flex-col gap-8">
+                  {/* Honeypot — hidden from users */}
+                  <input
+                    type="text"
+                    name="website"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    className="absolute opacity-0 pointer-events-none h-0 w-0"
+                    aria-hidden="true"
+                  />
+
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
                       <label className="block font-sans text-xs tracking-widest uppercase text-charcoal-500 mb-2">Full Name *</label>
-                      <input name="name" required value={form.name} onChange={handleChange} placeholder="Your full name" className="input-field" />
+                      <input name="name" required value={form.name} onChange={handleChange} placeholder="Your full name" className="input-field" disabled={submitting} />
                     </div>
                     <div>
                       <label className="block font-sans text-xs tracking-widest uppercase text-charcoal-500 mb-2">Email Address *</label>
-                      <input name="email" type="email" required value={form.email} onChange={handleChange} placeholder="you@example.com" className="input-field" />
+                      <input name="email" type="email" required value={form.email} onChange={handleChange} placeholder="you@example.com" className="input-field" disabled={submitting} />
                     </div>
                     <div>
                       <label className="block font-sans text-xs tracking-widest uppercase text-charcoal-500 mb-2">Phone / WhatsApp</label>
-                      <input name="phone" value={form.phone} onChange={handleChange} placeholder="+1 (555) 000-0000" className="input-field" />
+                      <input name="phone" value={form.phone} onChange={handleChange} placeholder="+1 (555) 000-0000" className="input-field" disabled={submitting} />
                     </div>
                     <div>
                       <label className="block font-sans text-xs tracking-widest uppercase text-charcoal-500 mb-2">Service Required *</label>
-                      <select name="service" required value={form.service} onChange={handleChange} className="input-field">
+                      <select name="service" required value={form.service} onChange={handleChange} className="input-field" disabled={submitting}>
                         <option value="">Select a service…</option>
-                        <option value="Airport Transfer">Airport Transfer</option>
-                        <option value="Port Transfer">Port / Ferry Transfer</option>
-                        <option value="Hourly Chauffeur">Hourly Chauffeur</option>
-                        <option value="Private Tour">Private Tour</option>
-                        <option value="Wedding / Event">Wedding / Event Transport</option>
-                        <option value="Custom Itinerary">Custom Multi-Day Itinerary</option>
-                        <option value="Other">Other Enquiry</option>
+                        {SERVICE_OPTIONS.map((option) => (
+                          <option key={option} value={option}>{option}</option>
+                        ))}
                       </select>
                     </div>
                     <div>
                       <label className="block font-sans text-xs tracking-widest uppercase text-charcoal-500 mb-2">Travel Date</label>
-                      <input name="date" type="date" value={form.date} onChange={handleChange} className="input-field" />
+                      <input name="date" type="date" value={form.date} onChange={handleChange} className="input-field" disabled={submitting} />
                     </div>
                     <div>
                       <label className="block font-sans text-xs tracking-widest uppercase text-charcoal-500 mb-2">Number of Guests</label>
-                      <input name="guests" type="number" min={1} max={100} value={form.guests} onChange={handleChange} placeholder="e.g. 2" className="input-field" />
+                      <input name="guests" type="number" min={1} max={100} value={form.guests} onChange={handleChange} placeholder="e.g. 2" className="input-field" disabled={submitting} />
                     </div>
                   </div>
 
+                  {form.airport && (
+                    <div>
+                      <label className="block font-sans text-xs tracking-widest uppercase text-charcoal-500 mb-2">Airport</label>
+                      <input name="airport" value={form.airport} readOnly className="input-field bg-cream" />
+                    </div>
+                  )}
+
                   <div>
-                    <label className="block font-sans text-xs tracking-widests uppercase text-charcoal-500 mb-2">Message / Additional Details</label>
+                    <label className="block font-sans text-xs tracking-widest uppercase text-charcoal-500 mb-2">Message / Additional Details</label>
                     <textarea
                       name="message"
                       rows={5}
@@ -198,12 +274,27 @@ export default function Contact() {
                       onChange={handleChange}
                       placeholder="Tell us about your plans, pick-up location, accommodation, any special requirements…"
                       className="input-field resize-none"
+                      disabled={submitting}
                     />
                   </div>
 
+                  {error && (
+                    <div className="flex items-start gap-3 rounded border border-red-200 bg-red-50 p-4 text-red-800">
+                      <AlertCircle size={18} className="flex-none mt-0.5" strokeWidth={1.5} />
+                      <p className="font-sans text-sm leading-relaxed">{error}</p>
+                    </div>
+                  )}
+
                   <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                    <button type="submit" className="btn-primary">
-                      Send Enquiry
+                    <button type="submit" className="btn-primary" disabled={submitting}>
+                      {submitting ? (
+                        <>
+                          <Loader2 size={16} className="animate-spin" />
+                          Sending…
+                        </>
+                      ) : (
+                        'Send Enquiry'
+                      )}
                     </button>
                     <p className="font-sans text-xs text-charcoal-400">
                       We respond within 2 hours during business hours.

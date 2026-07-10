@@ -3,10 +3,10 @@ import DestinationTransferPage from '../../components/DestinationTransferPage'
 export default function TransferToTrani() {
   return (
     <DestinationTransferPage
-      metaTitle="Private Transfer to Trani from Airport | Connect in Puglia"
+      metaTitle="Private Transfer to Trani from Airport | ConnectinPuglia"
       metaDesc="Private transfer to Trani from Bari Airport. Fixed price, professional driver, door to door. ConnectinPuglia — Puglia's luxury transfer specialist."
       canonical="https://connectinpuglia.com/transfer-to-trani"
-      heroImg="/images/destinations/trani-hero.png"
+      heroImg="/images/destinations/trani-hero.webp"
       h1="Private Transfer to Trani — The Cathedral on the Sea."
       subheadline="Your driver meets you at Bari Airport and takes you directly to Trani — one of Puglia's most elegant coastal cities, known for its extraordinary Norman cathedral standing on the edge of the Adriatic."
       routes={[

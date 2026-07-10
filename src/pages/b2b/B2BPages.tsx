@@ -1,6 +1,8 @@
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { ArrowRight, CheckCircle } from 'lucide-react'
+import HeroImage from '../../components/HeroImage'
+import TwitterMeta from '../../components/TwitterMeta'
 
 type B2BPageProps = {
   title: string
@@ -39,11 +41,10 @@ function B2BPage({ title, metaTitle, metaDesc, canonical, badge, intro, heroImg,
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
       </Helmet>
+      <TwitterMeta title={metaTitle} description={metaDesc} image={ogImage} />
 
-      <section
-        className="relative pt-36 pb-20 bg-cover bg-center text-white"
-        style={{ backgroundImage: `url('${heroImg}')` }}
-      >
+      <section className="relative overflow-hidden pt-36 pb-20 text-white">
+        <HeroImage src={heroImg} alt={title} />
         <div className="absolute inset-0 bg-charcoal-900/68" />
         <div className="relative z-10 container-page">
           <p className="section-label text-gold-400 mb-4">{badge}</p>
@@ -102,12 +103,12 @@ function B2BPage({ title, metaTitle, metaDesc, canonical, badge, intro, heroImg,
 export function B2BMasserieResorts() {
   return <B2BPage
     title="Ground Transport Partner for Masserie & Resorts in Puglia"
-    metaTitle="Ground Transport for Masserie & Resorts | Connect in Puglia"
+    metaTitle="Ground Transport for Masserie & Resorts | ConnectinPuglia"
     metaDesc="Dedicated ground transport partner for luxury masserie and resorts in Puglia. NCC licensed, reliable, professional — always a reflection of your brand."
     canonical="https://connectinpuglia.com/b2b-masserie-resorts"
     badge="For Masserie & Luxury Resorts"
-    heroImg="/images/b2b/b2b-masserie-resorts-og.png"
-    ogImage="https://connectinpuglia.com/images/b2b/b2b-masserie-resorts-og.png"
+    heroImg="/images/b2b/b2b-masserie-resorts-og.webp"
+    ogImage="https://connectinpuglia.com/images/b2b/b2b-masserie-resorts-og.webp"
     intro="ConnectinPuglia is the trusted transport partner for Puglia's leading masserie and luxury resorts. We provide a seamless, brand-consistent experience for your guests from the moment they land to the moment they depart."
     benefits={[
       'NCC licensed and fully insured for all passenger journeys',
@@ -131,12 +132,12 @@ export function B2BMasserieResorts() {
 export function B2BHotels() {
   return <B2BPage
     title="Airport Transfer Partner for Hotels in Puglia"
-    metaTitle="Airport Transfer Partner for Hotels | Connect in Puglia"
+    metaTitle="Airport Transfer Partner for Hotels | ConnectinPuglia"
     metaDesc="Outsource your guests' airport transfers to ConnectinPuglia. NCC licensed, professional, white-label service for hotels in Puglia."
     canonical="https://connectinpuglia.com/b2b-hotels"
     badge="For Hotels"
-    heroImg="/images/b2b/b2b-hotels-og.png"
-    ogImage="https://connectinpuglia.com/images/b2b/b2b-hotels-og.png"
+    heroImg="/images/b2b/b2b-hotels-og.webp"
+    ogImage="https://connectinpuglia.com/images/b2b/b2b-hotels-og.webp"
     intro="Outsource your guests' airport and excursion transfers to a trusted, NCC-licensed professional. We operate seamlessly under your brand — your guests simply see excellent service."
     benefits={[
       'White-label service — we operate under your hotel\'s name if required',
@@ -158,12 +159,12 @@ export function B2BHotels() {
 export function B2BTravelDesigners() {
   return <B2BPage
     title="Ground Transport for Travel Designers & DMCs in Puglia"
-    metaTitle="Ground Transport for Travel Designers & DMC | Connect in Puglia"
+    metaTitle="Ground Transport for Travel Designers & DMC | ConnectinPuglia"
     metaDesc="Puglia ground transport supplier for travel designers, tour operators, and DMCs. Rate cards, account management, reliable NCC service."
     canonical="https://connectinpuglia.com/b2b-travel-designers-dmc"
     badge="For Travel Designers & DMCs"
-    heroImg="/images/b2b/b2b-travel-designers-og.png"
-    ogImage="https://connectinpuglia.com/images/b2b/b2b-travel-designers-og.png"
+    heroImg="/images/b2b/b2b-travel-designers-og.webp"
+    ogImage="https://connectinpuglia.com/images/b2b/b2b-travel-designers-og.webp"
     intro="ConnectinPuglia is the preferred Puglia ground transport supplier for independent travel designers, boutique tour operators, and destination management companies. We make your programmes look and run beautifully."
     benefits={[
       'Transparent published rate card for planning and quoting',
@@ -185,12 +186,12 @@ export function B2BTravelDesigners() {
 export function B2BWeddingPlanners() {
   return <B2BPage
     title="Wedding Transport Partner for Planners in Puglia"
-    metaTitle="Wedding Transport Partner for Planners | Connect in Puglia"
+    metaTitle="Wedding Transport Partner for Planners | ConnectinPuglia"
     metaDesc="Ground transport partner for wedding planners in Puglia. Multi-vehicle coordination, guest airport logistics, ceremony-day drivers. NCC licensed."
     canonical="https://connectinpuglia.com/b2b-wedding-planners"
     badge="For Wedding Planners"
-    heroImg="/images/b2b/b2b-wedding-planners-og.png"
-    ogImage="https://connectinpuglia.com/images/b2b/b2b-wedding-planners-og.png"
+    heroImg="/images/b2b/b2b-wedding-planners-og.webp"
+    ogImage="https://connectinpuglia.com/images/b2b/b2b-wedding-planners-og.webp"
     intro="We are the trusted wedding transport partner for leading destination wedding planners in Puglia. We manage the full transport timeline — from the first guest arrival to the last farewell transfer — so you can focus on what you do best."
     benefits={[
       'Multi-vehicle coordination across the entire wedding period',

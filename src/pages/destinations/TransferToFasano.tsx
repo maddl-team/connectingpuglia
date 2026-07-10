@@ -3,10 +3,10 @@ import DestinationTransferPage from '../../components/DestinationTransferPage'
 export default function TransferToFasano() {
   return (
     <DestinationTransferPage
-      metaTitle="Private Transfer to Fasano & Borgo Egnazia | Connect in Puglia"
+      metaTitle="Private Transfer to Fasano & Borgo Egnazia | ConnectinPuglia"
       metaDesc="Private transfer to Fasano and Borgo Egnazia from Bari or Brindisi airport with ConnectinPuglia. Fixed rates, meet and greet, luxury fleet. Book your transfer now."
       canonical="https://connectinpuglia.com/transfer-to-fasano-borgo-egnazia"
-      heroImg="/images/destinations/fasano-hero.png"
+      heroImg="/images/destinations/fasano-hero.webp"
       h1="Private Transfer to Fasano & Borgo Egnazia — Arrive in Style."
       subheadline="Your driver is waiting at arrivals. Fixed price, meet and greet, door to door from Bari or Brindisi airport directly to your masseria or resort in the Fasano area — no meters, no surprises."
       routes={[

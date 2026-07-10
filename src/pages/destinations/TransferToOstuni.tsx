@@ -3,10 +3,10 @@ import DestinationTransferPage from '../../components/DestinationTransferPage'
 export default function TransferToOstuni() {
   return (
     <DestinationTransferPage
-      metaTitle="Private Transfer to Ostuni from Airport | Connect in Puglia"
+      metaTitle="Private Transfer to Ostuni from Airport | ConnectinPuglia"
       metaDesc="Private transfer to Ostuni from Bari or Brindisi airport with ConnectinPuglia. Fixed rates, meet and greet, luxury fleet. Direct to Ostuni and surrounding masserie. Book now."
       canonical="https://connectinpuglia.com/transfer-to-ostuni"
-      heroImg="/images/destinations/ostuni-hero.png"
+      heroImg="/images/destinations/ostuni-hero.webp"
       h1="Private Transfer to Ostuni — The White City Calls."
       subheadline="Your driver meets you at arrivals and takes you directly to Ostuni — no meters, no navigation stress, fixed price confirmed before you travel."
       routes={[

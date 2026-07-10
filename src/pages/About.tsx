@@ -1,6 +1,8 @@
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Shield, Award, Heart } from 'lucide-react'
+import HeroImage from '../components/HeroImage'
+import TwitterMeta from '../components/TwitterMeta'
 
 const values = [
   {
@@ -24,21 +26,24 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>About Us | Connect in Puglia</title>
+        <title>About Us | ConnectinPuglia</title>
         <meta name="description" content="ConnectinPuglia is a premium NCC licensed private transfer and tour operator based in Puglia, southern Italy. Meet our team and discover our story." />
         <link rel="canonical" href="https://connectinpuglia.com/about-us" />
-        <meta property="og:title" content="About Us | Connect in Puglia" />
+        <meta property="og:title" content="About Us | ConnectinPuglia" />
         <meta property="og:description" content="ConnectinPuglia is a premium NCC licensed private transfer and tour operator based in Puglia, southern Italy. Meet our team and discover our story." />
         <meta property="og:url" content="https://connectinpuglia.com/about-us" />
-        <meta property="og:image" content="https://connectinpuglia.com/images/main/about-og.png" />
+        <meta property="og:image" content="https://connectinpuglia.com/images/main/about-og.webp" />
         <meta property="og:type" content="website" />
       </Helmet>
+      <TwitterMeta
+        title="About Us | ConnectinPuglia"
+        description="ConnectinPuglia is a premium NCC licensed private transfer and tour operator based in Puglia, southern Italy. Meet our team and discover our story."
+        image="https://connectinpuglia.com/images/main/about-og.webp"
+      />
 
       {/* Page Header */}
-      <section
-        className="relative pt-40 pb-24 bg-cover bg-center"
-        style={{ backgroundImage: `url('/images/main/about-hero.png')` }}
-      >
+      <section className="relative overflow-hidden pt-40 pb-24">
+        <HeroImage src="/images/main/about-hero.webp" alt="About ConnectinPuglia" />
         <div className="absolute inset-0 bg-charcoal-900/72" />
         <div className="relative z-10 container-page text-white">
           <p className="section-label text-gold-400 mb-4">Our Story</p>
@@ -78,7 +83,7 @@ export default function About() {
             <div className="relative">
               <div
                 className="aspect-[3/4] bg-cover bg-center"
-                style={{ backgroundImage: `url('/images/main/about-card-1.png')` }}
+                style={{ backgroundImage: `url('/images/main/about-card-1.webp')` }}
               />
               <div className="absolute -bottom-6 -right-6 bg-gold-500 text-charcoal-900 p-6 w-52">
                 <span className="font-serif text-4xl font-medium">NCC</span>

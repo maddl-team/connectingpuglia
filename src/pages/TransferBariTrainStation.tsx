@@ -6,10 +6,10 @@ export default function TransferBariTrainStation() {
       slug="transfer-from-bari-train-station"
       title="Private Transfer from Bari Train Station — Direct to Your Destination."
       subtitle="Book Your Bari Train Station Transfer"
-      metaTitle="Private Transfer from Bari Train Station | Connect in Puglia"
+      metaTitle="Private Transfer from Bari Train Station | ConnectinPuglia"
       metaDesc="Private transfer from Bari Centrale train station to masserie and hotels across Puglia. Fixed price, professional driver, door-to-door service. ConnectinPuglia."
       canonical="https://connectinpuglia.com/transfer-from-bari-train-station"
-      heroImg="/images/transfers/bari-train-hero.png"
+      heroImg="/images/transfers/bari-train-hero.webp"
       intro="Arriving by Italo or Trenitalia high-speed train? Your driver meets you outside Bari Centrale station and takes you directly to your destination across Puglia — no waiting, no navigation, fixed price."
       destinations={[
         { name: 'Fasano & Borgo Egnazia', time: '60 min' },

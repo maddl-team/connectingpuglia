@@ -1,4 +1,7 @@
 import { Helmet } from 'react-helmet-async'
+import { toAbsoluteUrl } from '../../lib/seo'
+import HeroImage from '../../components/HeroImage'
+import TwitterMeta from '../../components/TwitterMeta'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { ArrowRight, Clock, CheckCircle, MapPin, MessageCircle, Star, ChevronDown, ChevronUp, Users } from 'lucide-react'
@@ -51,16 +54,15 @@ function TourPage({
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDesc} />
         <meta property="og:url" content={canonical} />
-        <meta property="og:image" content={heroImg} />
+        <meta property="og:image" content={toAbsoluteUrl(heroImg)} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(touristTripSchema)}</script>
       </Helmet>
+      <TwitterMeta title={metaTitle} description={metaDesc} image={heroImg} />
 
       {/* HERO */}
-      <section
-        className="relative min-h-[75vh] flex items-center overflow-hidden"
-        style={{ backgroundImage: `url('${heroImg}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-      >
+      <section className="relative min-h-[75vh] flex items-center overflow-hidden">
+        <HeroImage src={heroImg} alt={h1} />
         <div className="absolute inset-0 bg-gradient-to-r from-charcoal-950/90 via-charcoal-950/68 to-charcoal-950/20" />
         <div className="relative z-10 container-page pt-28 pb-20 text-white max-w-3xl">
           <div className="flex items-center gap-3 mb-5">
@@ -274,10 +276,10 @@ export function TourValleDItria() {
   }
   return (
     <TourPage
-      metaTitle="Valle d'Itria Private Tour with Chauffeur | Connect in Puglia"
+      metaTitle="Valle d'Itria Private Tour with Chauffeur | ConnectinPuglia"
       metaDesc="Private full-day tour of the Valle d'Itria with a local chauffeur. Alberobello, Locorotondo, Cisternino, Martina Franca. Fixed rates. Departing from your masseria. Book now."
       canonical="https://connectinpuglia.com/tour-valle-ditria"
-      heroImg="https://connectinpuglia.com/images/tours/valle-ditria-hero.png"
+      heroImg="https://connectinpuglia.com/images/tours/valle-ditria-hero.webp"
       h1="Valle d'Itria Private Tour — Into the Heart of Puglia."
       badge="Most Popular"
       duration="Full day or half day · 5–8 hours"
@@ -322,10 +324,10 @@ export function TourWinePuglia() {
   }
   return (
     <TourPage
-      metaTitle="Private Wine Tour Puglia — Primitivo & Negroamaro with Chauffeur | Connect in Puglia"
+      metaTitle="Private Wine Tour Puglia — Primitivo & Negroamaro with Chauffeur | ConnectinPuglia"
       metaDesc="Private wine tour in Puglia with a professional chauffeur. Primitivo and Negroamaro winery visits, guided cellar tours and tastings. Fixed rates. Book now."
       canonical="https://connectinpuglia.com/tour-wine-puglia"
-      heroImg="https://connectinpuglia.com/images/tours/wine-puglia-hero.png"
+      heroImg="https://connectinpuglia.com/images/tours/wine-puglia-hero.webp"
       h1="Puglia Wine Tour — Primitivo, Negroamaro & the People Behind Them."
       badge="Gastronomy"
       duration="Half day or full day · 4–7 hours"
@@ -371,10 +373,10 @@ export function TourSalento() {
   }
   return (
     <TourPage
-      metaTitle="Private Salento Tour — Lecce, Otranto, Gallipoli with Chauffeur | Connect in Puglia"
+      metaTitle="Private Salento Tour — Lecce, Otranto, Gallipoli with Chauffeur | ConnectinPuglia"
       metaDesc="Private full-day tour of Salento with a local chauffeur. Lecce Baroque, Otranto Cathedral mosaics, Gallipoli old town. Fixed rates. Book now."
       canonical="https://connectinpuglia.com/tour-salento"
-      heroImg="https://connectinpuglia.com/images/tours/salento-hero.png"
+      heroImg="https://connectinpuglia.com/images/tours/salento-hero.webp"
       h1="Salento Private Tour — Lecce, Gallipoli, Otranto."
       badge="Culture & Coast"
       duration="Full day · 8–9 hours"
@@ -421,10 +423,10 @@ export function TourBaroquePuglia() {
   }
   return (
     <TourPage
-      metaTitle="Baroque Puglia Private Tour — Lecce, Martina Franca with Chauffeur | Connect in Puglia"
+      metaTitle="Baroque Puglia Private Tour — Lecce, Martina Franca with Chauffeur | ConnectinPuglia"
       metaDesc="Private day tour of Baroque Puglia — Lecce, Martina Franca, Locorotondo. Architecture, history, and wine. Fixed rates. Book now."
       canonical="https://connectinpuglia.com/tour-baroque-puglia"
-      heroImg="https://connectinpuglia.com/images/tours/baroque-puglia-hero.png"
+      heroImg="https://connectinpuglia.com/images/tours/baroque-puglia-hero.webp"
       h1="Baroque Puglia — Architecture, History & the Golden South."
       badge="Architecture"
       duration="Full day · 8 hours"
@@ -471,10 +473,10 @@ export function TourFoodOliveOil() {
   }
   return (
     <TourPage
-      metaTitle="Private Food & Olive Oil Tour Puglia with Chauffeur | Connect in Puglia"
+      metaTitle="Private Food & Olive Oil Tour Puglia with Chauffeur | ConnectinPuglia"
       metaDesc="Private food and olive oil tour in Puglia — frantoio olive press, burrata dairy, orecchiette makers, artisan producers. Fixed rates. Book now."
       canonical="https://connectinpuglia.com/tour-food-olive-oil"
-      heroImg="https://connectinpuglia.com/images/tours/food-olive-oil-hero.png"
+      heroImg="https://connectinpuglia.com/images/tours/food-olive-oil-hero.webp"
       h1="Puglia Food & Olive Oil Tour — From Grove to Table."
       badge="Food & Produce"
       duration="Half day or full day · 4–6 hours"

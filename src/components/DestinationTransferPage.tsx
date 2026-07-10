@@ -1,4 +1,7 @@
 import { Helmet } from 'react-helmet-async'
+import { toAbsoluteUrl } from '../lib/seo'
+import HeroImage from './HeroImage'
+import TwitterMeta from './TwitterMeta'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import {
@@ -93,17 +96,16 @@ export default function DestinationTransferPage({
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDesc} />
         <meta property="og:url" content={canonical} />
-        <meta property="og:image" content={heroImg} />
+        <meta property="og:image" content={toAbsoluteUrl(heroImg)} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
       </Helmet>
+      <TwitterMeta title={metaTitle} description={metaDesc} image={heroImg} />
 
       {/* HERO */}
-      <section
-        className="relative min-h-[80vh] flex items-center overflow-hidden"
-        style={{ backgroundImage: `url('${heroImg}')`, backgroundSize: 'cover', backgroundPosition: 'center 55%' }}
-      >
+      <section className="relative min-h-[80vh] flex items-center overflow-hidden">
+        <HeroImage src={heroImg} alt={h1} objectPosition="center 55%" />
         <div className="absolute inset-0 bg-gradient-to-r from-charcoal-950/90 via-charcoal-950/68 to-charcoal-950/25" />
         <div className="relative z-10 container-page pt-28 pb-20 text-white max-w-3xl">
           <h1 className="font-serif font-light text-white leading-[1.1] mb-5" style={{ fontSize: 'clamp(2.25rem, 5vw, 3.75rem)' }}>

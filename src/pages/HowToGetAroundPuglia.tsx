@@ -2,6 +2,8 @@ import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { ArrowRight, CheckCircle, XCircle, AlertCircle, ChevronDown, ChevronUp, MessageCircle } from 'lucide-react'
+import HeroImage from '../components/HeroImage'
+import TwitterMeta from '../components/TwitterMeta'
 
 const transport = [
   {
@@ -168,7 +170,7 @@ export default function HowToGetAroundPuglia() {
   return (
     <>
       <Helmet>
-        <title>How to Get Around Puglia Without a Car | Connect in Puglia</title>
+        <title>How to Get Around Puglia Without a Car | ConnectinPuglia</title>
         <meta
           name="description"
           content="The complete guide to getting around Puglia without a rental car. Private transfers, trains, buses — honest advice and the best options for every type of traveller. By ConnectinPuglia."
@@ -177,16 +179,22 @@ export default function HowToGetAroundPuglia() {
         <meta property="og:title" content="How to Get Around Puglia Without a Car — Your Complete Guide" />
         <meta property="og:description" content="The complete guide to getting around Puglia without a rental car. Private transfers, trains, buses — honest advice and the best options for every type of traveller." />
         <meta property="og:url" content="https://connectinpuglia.com/how-to-get-around-puglia-without-a-car" />
-        <meta property="og:image" content="https://connectinpuglia.com/images/geo/how-to-get-around-hero.png" />
+        <meta property="og:image" content="https://connectinpuglia.com/images/geo/how-to-get-around-hero.webp" />
         <meta property="og:type" content="article" />
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
       </Helmet>
+      <TwitterMeta
+        title="How to Get Around Puglia Without a Car — Your Complete Guide"
+        description="The complete guide to getting around Puglia without a rental car. Private transfers, trains, buses — honest advice and the best options for every type of traveller."
+        image="https://connectinpuglia.com/images/geo/how-to-get-around-hero.webp"
+      />
 
-      <section
-        className="relative h-56 sm:h-72 bg-cover bg-center"
-        style={{ backgroundImage: `url('/images/geo/how-to-get-around-hero.png')` }}
-      >
+      <section className="relative h-56 overflow-hidden sm:h-72">
+        <HeroImage
+          src="/images/geo/how-to-get-around-hero.webp"
+          alt="How to Get Around Puglia Without a Car — Your Complete Guide"
+        />
         <div className="absolute inset-0 bg-charcoal-900/30" />
       </section>
 

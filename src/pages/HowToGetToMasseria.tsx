@@ -2,6 +2,8 @@ import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { ArrowRight, CheckCircle, XCircle, AlertCircle, ChevronDown, ChevronUp, MessageCircle, Star } from 'lucide-react'
+import HeroImage from '../components/HeroImage'
+import TwitterMeta from '../components/TwitterMeta'
 
 const options = [
   {
@@ -171,7 +173,7 @@ export default function HowToGetToMasseria() {
   return (
     <>
       <Helmet>
-        <title>How to Get to a Masseria in Puglia | Connect in Puglia</title>
+        <title>How to Get to a Masseria in Puglia | ConnectinPuglia</title>
         <meta
           name="description"
           content="The complete guide to getting to a masseria in Puglia from the airport. Private transfer, rental car, or taxi — honest advice from ConnectinPuglia, Puglia's luxury transfer specialist."
@@ -180,16 +182,22 @@ export default function HowToGetToMasseria() {
         <meta property="og:title" content="How to Get to a Masseria in Puglia — The Complete Guide" />
         <meta property="og:description" content="The complete guide to getting to a masseria in Puglia from the airport. Private transfer, rental car, or taxi — honest advice from ConnectinPuglia." />
         <meta property="og:url" content="https://connectinpuglia.com/how-to-get-to-a-masseria-in-puglia" />
-        <meta property="og:image" content="https://connectinpuglia.com/images/geo/how-to-get-to-masseria-hero.png" />
+        <meta property="og:image" content="https://connectinpuglia.com/images/geo/how-to-get-to-masseria-hero.webp" />
         <meta property="og:type" content="article" />
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
       </Helmet>
+      <TwitterMeta
+        title="How to Get to a Masseria in Puglia — The Complete Guide"
+        description="The complete guide to getting to a masseria in Puglia from the airport. Private transfer, rental car, or taxi — honest advice from ConnectinPuglia."
+        image="https://connectinpuglia.com/images/geo/how-to-get-to-masseria-hero.webp"
+      />
 
-      <section
-        className="relative h-56 sm:h-72 bg-cover bg-center"
-        style={{ backgroundImage: `url('/images/geo/how-to-get-to-masseria-hero.png')` }}
-      >
+      <section className="relative h-56 overflow-hidden sm:h-72">
+        <HeroImage
+          src="/images/geo/how-to-get-to-masseria-hero.webp"
+          alt="How to Get to a Masseria in Puglia — The Complete Guide"
+        />
         <div className="absolute inset-0 bg-charcoal-900/30" />
       </section>
 

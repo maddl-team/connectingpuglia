@@ -3,10 +3,10 @@ import DestinationTransferPage from '../../components/DestinationTransferPage'
 export default function TransferToPolignano() {
   return (
     <DestinationTransferPage
-      metaTitle="Private Transfer to Polignano a Mare | Connect in Puglia"
+      metaTitle="Private Transfer to Polignano a Mare | ConnectinPuglia"
       metaDesc="Private transfer to Polignano a Mare from Bari Airport. Fixed price, professional driver, direct to your hotel above the Adriatic. ConnectinPuglia."
       canonical="https://connectinpuglia.com/transfer-to-polignano-a-mare"
-      heroImg="/images/destinations/polignano-hero.png"
+      heroImg="/images/destinations/polignano-hero.webp"
       h1="Private Transfer to Polignano a Mare — Above the Adriatic."
       subheadline="Your driver meets you at Bari Airport and takes you directly to your hotel in Polignano — one of the closest and most beautiful seaside destinations from BRI."
       routes={[

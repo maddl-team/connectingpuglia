@@ -3,10 +3,10 @@ import DestinationTransferPage from '../../components/DestinationTransferPage'
 export default function TransferToMatera() {
   return (
     <DestinationTransferPage
-      metaTitle="Private Transfer to Matera from Puglia | Connect in Puglia"
+      metaTitle="Private Transfer to Matera from Puglia | ConnectinPuglia"
       metaDesc="Private transfer to Matera from Bari Airport or Puglia masserie. Fixed price, door to door. ConnectinPuglia — Puglia's luxury transfer specialist."
       canonical="https://connectinpuglia.com/transfer-to-matera-from-puglia"
-      heroImg="/images/destinations/matera-hero.png"
+      heroImg="/images/destinations/matera-hero.webp"
       h1="Private Transfer to Matera from Puglia — Into the Ancient City."
       subheadline="Your driver takes you directly from Bari Airport or your Puglia masseria to the UNESCO Sassi di Matera — one of the world's most extraordinary ancient cities."
       routes={[

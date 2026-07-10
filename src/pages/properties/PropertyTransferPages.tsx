@@ -24,10 +24,10 @@ const sharedRoutes = {
 export function TransferToBorgoEgnazia() {
   return (
     <DestinationTransferPage
-      metaTitle="Private Transfer to Borgo Egnazia | Connect in Puglia"
+      metaTitle="Private Transfer to Borgo Egnazia | ConnectinPuglia"
       metaDesc="Private airport transfer to Borgo Egnazia from Bari and Brindisi airports. Fixed price, meet and greet, driver knows the property entrance. ConnectinPuglia."
       canonical="https://connectinpuglia.com/transfer-to-borgo-egnazia"
-      heroImg="/images/properties/borgo-egnazia-hero.png"
+      heroImg="/images/properties/borgo-egnazia-hero.webp"
       h1="Private Transfer to Borgo Egnazia — The Arrival Matters."
       subheadline="Your ConnectinPuglia driver meets you in arrivals, takes your luggage, and delivers you directly to the Borgo Egnazia entrance — no GPS confusion, no wrong turn, fixed price."
       routes={[...sharedRoutes.fasanoRoutes] as any}
@@ -71,10 +71,10 @@ export function TransferToBorgoEgnazia() {
 export function TransferToMasseriaSanDomenico() {
   return (
     <DestinationTransferPage
-      metaTitle="Private Transfer to Masseria San Domenico | Connect in Puglia"
+      metaTitle="Private Transfer to Masseria San Domenico | ConnectinPuglia"
       metaDesc="Private airport transfer to Masseria San Domenico from Bari and Brindisi airports. Fixed price, professional driver. ConnectinPuglia."
       canonical="https://connectinpuglia.com/transfer-to-masseria-san-domenico"
-      heroImg="/images/properties/masseria-san-domenico-hero.png"
+      heroImg="/images/properties/masseria-san-domenico-hero.webp"
       h1="Private Transfer to Masseria San Domenico — Fixed Price."
       subheadline="Your driver meets you in arrivals and delivers you directly to Masseria San Domenico's private entrance — no GPS confusion, door to door."
       routes={[...sharedRoutes.fasanoRoutes] as any}
@@ -117,10 +117,10 @@ export function TransferToMasseriaSanDomenico() {
 export function TransferToMasseriaTorreMaizza() {
   return (
     <DestinationTransferPage
-      metaTitle="Private Transfer to Masseria Torre Maizza | Connect in Puglia"
+      metaTitle="Private Transfer to Masseria Torre Maizza | ConnectinPuglia"
       metaDesc="Private airport transfer to Masseria Torre Maizza from Bari and Brindisi airports. Fixed price, professional driver. ConnectinPuglia."
       canonical="https://connectinpuglia.com/transfer-to-masseria-torre-maizza"
-      heroImg="/images/properties/masseria-torre-maizza-hero.png"
+      heroImg="/images/properties/masseria-torre-maizza-hero.webp"
       h1="Private Transfer to Masseria Torre Maizza — Fixed Price."
       subheadline="Your driver delivers you directly to the Masseria Torre Maizza entrance — a Rocco Forte property in the olive groves near Fasano."
       routes={[...sharedRoutes.fasanoRoutes] as any}
@@ -161,10 +161,10 @@ export function TransferToMasseriaTorreMaizza() {
 export function TransferToMasseriaIlMelograno() {
   return (
     <DestinationTransferPage
-      metaTitle="Private Transfer to Masseria Il Melograno | Connect in Puglia"
+      metaTitle="Private Transfer to Masseria Il Melograno | ConnectinPuglia"
       metaDesc="Private airport transfer to Masseria Il Melograno near Monopoli from Bari and Brindisi airports. Fixed price, professional driver. ConnectinPuglia."
       canonical="https://connectinpuglia.com/transfer-to-masseria-il-melograno"
-      heroImg="/images/properties/masseria-il-melograno-hero.png"
+      heroImg="/images/properties/masseria-il-melograno-hero.webp"
       h1="Private Transfer to Masseria Il Melograno — Fixed Price."
       subheadline="Your driver delivers you directly to Masseria Il Melograno near Monopoli — one of Puglia's oldest and most celebrated luxury estates."
       routes={[
@@ -221,10 +221,10 @@ export function TransferToMasseriaIlMelograno() {
 export function TransferToMasseriaIlFrantoio() {
   return (
     <DestinationTransferPage
-      metaTitle="Private Transfer to Masseria Il Frantoio | Connect in Puglia"
+      metaTitle="Private Transfer to Masseria Il Frantoio | ConnectinPuglia"
       metaDesc="Private airport transfer to Masseria Il Frantoio near Ostuni from Bari and Brindisi airports. Fixed price, professional driver. ConnectinPuglia."
       canonical="https://connectinpuglia.com/transfer-to-masseria-il-frantoio"
-      heroImg="/images/properties/masseria-il-frantoio-hero.png"
+      heroImg="/images/properties/masseria-il-frantoio-hero.webp"
       h1="Private Transfer to Masseria Il Frantoio — Fixed Price."
       subheadline="Your driver delivers you directly to Masseria Il Frantoio's countryside entrance near Ostuni — GPS cannot reliably find this property, but we always can."
       routes={[
@@ -282,10 +282,10 @@ export function TransferToMasseriaIlFrantoio() {
 export function TransferToLeAlcoveAlberobello() {
   return (
     <DestinationTransferPage
-      metaTitle="Private Transfer to Le Alcove Alberobello | Connect in Puglia"
+      metaTitle="Private Transfer to Le Alcove Alberobello | ConnectinPuglia"
       metaDesc="Private airport transfer to Le Alcove, Alberobello from Bari and Brindisi airports. Fixed price, door to door. ConnectinPuglia."
       canonical="https://connectinpuglia.com/transfer-to-le-alcove-alberobello"
-      heroImg="/images/properties/le-alcove-alberobello-hero.png"
+      heroImg="/images/properties/le-alcove-alberobello-hero.webp"
       h1="Private Transfer to Le Alcove Alberobello — Fixed Price."
       subheadline="Your driver delivers you to the entrance of Le Alcove, inside Alberobello's UNESCO trulli district — no ZTL worries, no GPS confusion."
       routes={[
@@ -342,10 +342,10 @@ export function TransferToLeAlcoveAlberobello() {
 export function TransferToMasseriaTorreCoccaro() {
   return (
     <DestinationTransferPage
-      metaTitle="Private Transfer to Masseria Torre Coccaro | Connect in Puglia"
+      metaTitle="Private Transfer to Masseria Torre Coccaro | ConnectinPuglia"
       metaDesc="Private airport transfer to Masseria Torre Coccaro from Bari and Brindisi airports. Fixed price, professional driver. ConnectinPuglia."
       canonical="https://connectinpuglia.com/transfer-to-masseria-torre-coccaro"
-      heroImg="/images/properties/masseria-torre-coccaro-hero.png"
+      heroImg="/images/properties/masseria-torre-coccaro-hero.webp"
       h1="Private Transfer to Masseria Torre Coccaro — Fixed Price."
       subheadline="Your driver delivers you directly to the Masseria Torre Coccaro estate entrance near Fasano — a Relais & Châteaux property with a private beach club."
       routes={[...sharedRoutes.fasanoRoutes] as any}
@@ -386,10 +386,10 @@ export function TransferToMasseriaTorreCoccaro() {
 export function TransferToGrottaPalazzese() {
   return (
     <DestinationTransferPage
-      metaTitle="Private Transfer to Grotta Palazzese, Polignano | Connect in Puglia"
+      metaTitle="Private Transfer to Grotta Palazzese, Polignano | ConnectinPuglia"
       metaDesc="Private airport transfer to Grotta Palazzese Hotel in Polignano a Mare from Bari Airport. Fixed price, professional driver. ConnectinPuglia."
       canonical="https://connectinpuglia.com/transfer-to-grotta-palazzese"
-      heroImg="/images/properties/grotta-palazzese-hero.png"
+      heroImg="/images/properties/grotta-palazzese-hero.webp"
       h1="Private Transfer to Grotta Palazzese, Polignano a Mare."
       subheadline="Your driver delivers you to the Grotta Palazzese entrance above the Adriatic cliffs — navigating Polignano's old town on your behalf."
       routes={[

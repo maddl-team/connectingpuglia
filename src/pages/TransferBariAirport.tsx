@@ -15,6 +15,8 @@ import {
   Shield,
   Wifi,
 } from 'lucide-react'
+import HeroImage from '../components/HeroImage'
+import TwitterMeta from '../components/TwitterMeta'
 
 const destinations = [
   { name: 'Fasano & Borgo Egnazia', time: '60 min' },
@@ -134,16 +136,16 @@ export default function TransferBariAirport() {
   return (
     <>
       <Helmet>
-        <title>Private Transfer from Bari Airport | Connect in Puglia</title>
+        <title>Private Transfer from Bari Airport | ConnectinPuglia</title>
         <meta
           name="description"
           content="Book your private transfer from Bari Airport with ConnectinPuglia. Fixed rates, meet and greet, luxury fleet. Direct to your masseria, hotel, or resort across Puglia. Available 24/7."
         />
         <link rel="canonical" href="https://connectinpuglia.com/transfer-from-bari-airport" />
-        <meta property="og:title" content="Private Transfer from Bari Airport | Connect in Puglia" />
+        <meta property="og:title" content="Private Transfer from Bari Airport | ConnectinPuglia" />
         <meta property="og:description" content="Book your private transfer from Bari Airport with ConnectinPuglia. Fixed rates, meet and greet, luxury fleet. Direct to your masseria, hotel, or resort across Puglia." />
         <meta property="og:url" content="https://connectinpuglia.com/transfer-from-bari-airport" />
-        <meta property="og:image" content="https://connectinpuglia.com/images/transfers/bari-airport-hero.png" />
+        <meta property="og:image" content="https://connectinpuglia.com/images/transfers/bari-airport-hero.webp" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
@@ -159,16 +161,19 @@ export default function TransferBariAirport() {
           "serviceType": "Airport Transfer"
         })}</script>
       </Helmet>
+      <TwitterMeta
+        title="Private Transfer from Bari Airport | ConnectinPuglia"
+        description="Book your private transfer from Bari Airport with ConnectinPuglia. Fixed rates, meet and greet, luxury fleet. Direct to your masseria, hotel, or resort across Puglia."
+        image="https://connectinpuglia.com/images/transfers/bari-airport-hero.webp"
+      />
 
       {/* HERO */}
-      <section
-        className="relative min-h-[80vh] flex items-center overflow-hidden"
-        style={{
-          backgroundImage: `url('/images/transfers/bari-airport-hero.png')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center 60%',
-        }}
-      >
+      <section className="relative min-h-[80vh] flex items-center overflow-hidden">
+        <HeroImage
+          src="/images/transfers/bari-airport-hero.webp"
+          alt="Private Transfer from Bari Airport — Door to Door, Fixed Price"
+          objectPosition="center 60%"
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-charcoal-950/90 via-charcoal-950/70 to-charcoal-950/30" />
         <div className="relative z-10 container-page pt-28 pb-20 text-white max-w-3xl">
           <div className="flex items-center gap-3 mb-5">

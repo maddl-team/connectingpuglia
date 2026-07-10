@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Car, Users, Wifi, Shield } from 'lucide-react'
+import TwitterMeta from '../components/TwitterMeta'
 
 const fleet = [
   {
@@ -9,7 +10,7 @@ const fleet = [
     luggage: '3 large suitcases',
     desc: 'The benchmark business sedan. Perfect for individuals, couples, and business travellers requiring a discreet, refined transfer.',
     features: ['Air conditioning', 'Leather interior', 'USB charging', 'WiFi on request', 'Water & magazines'],
-    img: '/images/fleet/our-fleet-card-1.png',
+    img: '/images/fleet/our-fleet-card-1.webp',
   },
   {
     model: 'Mercedes-Benz V-Class',
@@ -17,7 +18,7 @@ const fleet = [
     luggage: '7 large suitcases',
     desc: 'The premium MPV for families, small groups, and guests with substantial luggage. Spacious, comfortable, and elegantly appointed.',
     features: ['Captain chairs', 'Full climate control', 'Privacy glass', 'WiFi on request', 'Child seats available'],
-    img: '/images/fleet/our-fleet-card-2.png',
+    img: '/images/fleet/our-fleet-card-2.webp',
   },
   {
     model: 'Mercedes-Benz Vito Minibus',
@@ -25,7 +26,7 @@ const fleet = [
     luggage: '8 large suitcases',
     desc: 'Ideal for larger groups, wedding parties, and multi-guest masseria arrivals. Full air conditioning and generous luggage space.',
     features: ['Large luggage compartment', 'Full AC', 'Comfortable seating', 'Group transfer specialist'],
-    img: '/images/fleet/our-fleet-card-3.png',
+    img: '/images/fleet/our-fleet-card-3.webp',
   },
   {
     model: 'Mercedes-Benz Sprinter',
@@ -33,7 +34,7 @@ const fleet = [
     luggage: 'Extensive',
     desc: 'Executive minibus for larger corporate groups, tour parties, and event transport. Customisable seating configuration.',
     features: ['Executive seating', 'On-board PA available', 'Air conditioning', 'Ideal for incentives & events'],
-    img: '/images/fleet/our-fleet-card-4.png',
+    img: '/images/fleet/our-fleet-card-4.webp',
   },
 ]
 
@@ -41,15 +42,20 @@ export default function OurFleet() {
   return (
     <>
       <Helmet>
-        <title>Our Fleet — Mercedes-Benz Luxury Vehicles | Connect in Puglia</title>
+        <title>Our Fleet — Mercedes-Benz Luxury Vehicles | ConnectinPuglia</title>
         <meta name="description" content="ConnectinPuglia operates a premium fleet of Mercedes-Benz vehicles. E-Class, V-Class, Vito, and Sprinter — all fully licensed, insured and immaculately maintained." />
         <link rel="canonical" href="https://connectinpuglia.com/our-fleet" />
-        <meta property="og:title" content="Our Fleet — Mercedes-Benz Luxury Vehicles | Connect in Puglia" />
+        <meta property="og:title" content="Our Fleet — Mercedes-Benz Luxury Vehicles | ConnectinPuglia" />
         <meta property="og:description" content="ConnectinPuglia operates a premium fleet of Mercedes-Benz vehicles. E-Class, V-Class, Vito, and Sprinter — all fully licensed, insured and immaculately maintained." />
         <meta property="og:url" content="https://connectinpuglia.com/our-fleet" />
-        <meta property="og:image" content="https://connectinpuglia.com/images/fleet/our-fleet-og.png" />
+        <meta property="og:image" content="https://connectinpuglia.com/images/fleet/our-fleet-og.webp" />
         <meta property="og:type" content="website" />
       </Helmet>
+      <TwitterMeta
+        title="Our Fleet — Mercedes-Benz Luxury Vehicles | ConnectinPuglia"
+        description="ConnectinPuglia operates a premium fleet of Mercedes-Benz vehicles. E-Class, V-Class, Vito, and Sprinter — all fully licensed, insured and immaculately maintained."
+        image="https://connectinpuglia.com/images/fleet/our-fleet-og.webp"
+      />
 
       <section className="pt-36 pb-16 bg-charcoal-900 text-white">
         <div className="container-page">

@@ -1,25 +1,30 @@
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Briefcase, Users, CheckCircle } from 'lucide-react'
+import HeroImage from '../components/HeroImage'
+import TwitterMeta from '../components/TwitterMeta'
 
 export default function CorporateEvents() {
   return (
     <>
       <Helmet>
-        <title>Corporate Events &amp; Group Transport Puglia | Connect in Puglia</title>
+        <title>Corporate Events &amp; Group Transport Puglia | ConnectinPuglia</title>
         <meta name="description" content="Executive transfers and group logistics for corporate events, incentive trips, and productions in Puglia. NCC licensed, professional fleet management." />
         <link rel="canonical" href="https://connectinpuglia.com/corporate-events" />
-        <meta property="og:title" content="Corporate Events & Group Transport Puglia | Connect in Puglia" />
+        <meta property="og:title" content="Corporate Events & Group Transport Puglia | ConnectinPuglia" />
         <meta property="og:description" content="Executive transfers and group logistics for corporate events, incentive trips, and productions in Puglia. NCC licensed, professional fleet management." />
         <meta property="og:url" content="https://connectinpuglia.com/corporate-events" />
-        <meta property="og:image" content="https://connectinpuglia.com/images/main/corporate-events-og.png" />
+        <meta property="og:image" content="https://connectinpuglia.com/images/main/corporate-events-og.webp" />
         <meta property="og:type" content="website" />
       </Helmet>
+      <TwitterMeta
+        title="Corporate Events & Group Transport Puglia | ConnectinPuglia"
+        description="Executive transfers and group logistics for corporate events, incentive trips, and productions in Puglia. NCC licensed, professional fleet management."
+        image="https://connectinpuglia.com/images/main/corporate-events-og.webp"
+      />
 
-      <section
-        className="relative pt-36 pb-24 bg-cover bg-center text-white"
-        style={{ backgroundImage: `url('/images/main/corporate-events-hero.png')` }}
-      >
+      <section className="relative overflow-hidden pt-36 pb-24 text-white">
+        <HeroImage src="/images/main/corporate-events-hero.webp" alt="Corporate Events & Group Transport" />
         <div className="absolute inset-0 bg-charcoal-900/68" />
         <div className="relative z-10 container-page">
           <p className="section-label text-gold-400 mb-4">Corporate & Incentive</p>

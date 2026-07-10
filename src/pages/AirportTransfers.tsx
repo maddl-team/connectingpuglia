@@ -1,6 +1,8 @@
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Plane, Ship, Train, CheckCircle, Clock, Shield, Search } from 'lucide-react'
+import HeroImage from '../components/HeroImage'
+import TwitterMeta from '../components/TwitterMeta'
 
 const transferTypes = [
   {
@@ -41,20 +43,23 @@ export default function AirportTransfers() {
   return (
     <>
       <Helmet>
-        <title>Airport Transfers Puglia — From BRI &amp; BDS | Connect in Puglia</title>
+        <title>Airport Transfers Puglia — From BRI &amp; BDS | ConnectinPuglia</title>
         <meta name="description" content="Private airport transfers from Bari Airport (BRI), Brindisi Airport (BDS), Bari Train Station and Brindisi Port. Fixed price, meet & greet, luxury fleet." />
         <link rel="canonical" href="https://connectinpuglia.com/airport-transfers" />
-        <meta property="og:title" content="Airport Transfers Puglia — From BRI & BDS | Connect in Puglia" />
+        <meta property="og:title" content="Airport Transfers Puglia — From BRI & BDS | ConnectinPuglia" />
         <meta property="og:description" content="Private airport transfers from Bari Airport (BRI), Brindisi Airport (BDS), Bari Train Station and Brindisi Port. Fixed price, meet & greet, luxury fleet." />
         <meta property="og:url" content="https://connectinpuglia.com/airport-transfers" />
-        <meta property="og:image" content="https://connectinpuglia.com/images/main/airport-transfers-og.png" />
+        <meta property="og:image" content="https://connectinpuglia.com/images/main/airport-transfers-og.webp" />
         <meta property="og:type" content="website" />
       </Helmet>
+      <TwitterMeta
+        title="Airport Transfers Puglia — From BRI & BDS | ConnectinPuglia"
+        description="Private airport transfers from Bari Airport (BRI), Brindisi Airport (BDS), Bari Train Station and Brindisi Port. Fixed price, meet & greet, luxury fleet."
+        image="https://connectinpuglia.com/images/main/airport-transfers-og.webp"
+      />
 
-      <section
-        className="relative pt-36 pb-24 bg-cover bg-center"
-        style={{ backgroundImage: `url('/images/main/airport-transfers-hero.png')` }}
-      >
+      <section className="relative overflow-hidden pt-36 pb-24">
+        <HeroImage src="/images/main/airport-transfers-hero.webp" alt="Private Airport Transfers in Puglia" />
         <div className="absolute inset-0 bg-charcoal-900/78" />
         <div className="relative z-10 container-page text-white text-center">
           <p className="section-label text-gold-400 mb-4">NCC Licensed · Available 24/7</p>

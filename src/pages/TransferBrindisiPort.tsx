@@ -6,10 +6,10 @@ export default function TransferBrindisiPort() {
       slug="transfer-from-brindisi-port"
       title="Private Transfer from Brindisi Port — Direct to Your Destination."
       subtitle="Book Your Brindisi Port Transfer"
-      metaTitle="Private Transfer from Brindisi Port | Connect in Puglia"
+      metaTitle="Private Transfer from Brindisi Port | ConnectinPuglia"
       metaDesc="Private transfer from Brindisi Port to masserie and hotels across Puglia. Fixed price, dockside meet & greet, professional driver. ConnectinPuglia."
       canonical="https://connectinpuglia.com/transfer-from-brindisi-port"
-      heroImg="/images/transfers/brindisi-port-hero.png"
+      heroImg="/images/transfers/brindisi-port-hero.webp"
       intro="Arriving by ferry from Greece, Albania, or Croatia? Your driver meets you dockside at the port and takes you directly to your destination — no meters, no haggling, fixed price confirmed in advance."
       destinations={[
         { name: 'Fasano & Borgo Egnazia', time: '35 min' },

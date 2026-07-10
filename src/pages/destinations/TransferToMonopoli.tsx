@@ -3,10 +3,10 @@ import DestinationTransferPage from '../../components/DestinationTransferPage'
 export default function TransferToMonopoli() {
   return (
     <DestinationTransferPage
-      metaTitle="Private Transfer to Monopoli from Airport | Connect in Puglia"
+      metaTitle="Private Transfer to Monopoli from Airport | ConnectinPuglia"
       metaDesc="Private transfer to Monopoli from Bari or Brindisi airport. Fixed price, professional driver, door to door. ConnectinPuglia."
       canonical="https://connectinpuglia.com/transfer-to-monopoli"
-      heroImg="/images/destinations/monopoli-hero.png"
+      heroImg="/images/destinations/monopoli-hero.webp"
       h1="Private Transfer to Monopoli — Fixed Price, Door to Door."
       subheadline="Your driver meets you at arrivals and takes you directly to Monopoli's historic harbour or your hotel — no meters, no navigation, fixed price confirmed before you travel."
       routes={[
