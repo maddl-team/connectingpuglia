@@ -112,7 +112,7 @@ export function B2BMasserieResorts() {
     intro="ConnectinPuglia is the trusted transport partner for Puglia's leading masserie and luxury resorts. We provide a seamless, brand-consistent experience for your guests from the moment they land to the moment they depart."
     benefits={[
       'NCC licensed and fully insured for all passenger journeys',
-      'Premium Mercedes-Benz fleet — always immaculate',
+      'Premium Audi A4 — always immaculate',
       'Drivers know every property entrance and access road',
       'Real-time flight and delay monitoring included',
       'White-label service — your branding, our operation',

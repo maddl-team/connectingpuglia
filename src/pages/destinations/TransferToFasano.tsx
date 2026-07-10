@@ -5,7 +5,7 @@ export default function TransferToFasano() {
   return (
     <DestinationTransferPage
       metaTitle="Private Transfer to Fasano & Borgo Egnazia | ConnectinPuglia"
-      metaDesc="Private transfer to Fasano and Borgo Egnazia from Bari or Brindisi airport, or Bari Port. Fixed rates, meet and greet, Mercedes-Benz E-Class sedan. Book your transfer now."
+      metaDesc="Private transfer to Fasano and Borgo Egnazia from Bari or Brindisi airport, or Bari Port. Fixed rates, meet and greet, Audi A4 sedan. Book your transfer now."
       canonical="https://connectinpuglia.com/transfer-to-fasano-borgo-egnazia"
       heroImg="/images/destinations/fasano-hero.webp"
       h1="Private Transfer to Fasano & Borgo Egnazia — Arrive in Style."

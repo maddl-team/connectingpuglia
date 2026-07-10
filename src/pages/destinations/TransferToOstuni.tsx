@@ -5,7 +5,7 @@ export default function TransferToOstuni() {
   return (
     <DestinationTransferPage
       metaTitle="Private Transfer to Ostuni from Airport | ConnectinPuglia"
-      metaDesc="Private transfer to Ostuni from Bari or Brindisi airport, or Bari Port. Fixed rates, meet and greet, Mercedes-Benz E-Class sedan. Direct to Ostuni and surrounding masserie. Book now."
+      metaDesc="Private transfer to Ostuni from Bari or Brindisi airport, or Bari Port. Fixed rates, meet and greet, Audi A4 sedan. Direct to Ostuni and surrounding masserie. Book now."
       canonical="https://connectinpuglia.com/transfer-to-ostuni"
       heroImg="/images/destinations/ostuni-hero.webp"
       h1="Private Transfer to Ostuni — The White City Calls."

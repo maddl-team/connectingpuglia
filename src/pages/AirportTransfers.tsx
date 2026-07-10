@@ -52,17 +52,17 @@ export default function AirportTransfers() {
     <>
       <Helmet>
         <title>Airport Transfers Puglia — From BRI &amp; BDS | ConnectinPuglia</title>
-        <meta name="description" content="Private airport transfers from Bari Airport (BRI), Brindisi Airport (BDS), Bari Train Station, Bari Port and Brindisi Port. Fixed price, meet & greet, luxury Mercedes-Benz sedan." />
+        <meta name="description" content="Private airport transfers from Bari Airport (BRI), Brindisi Airport (BDS), Bari Train Station, Bari Port and Brindisi Port. Fixed price, meet & greet, luxury Audi A4 sedan." />
         <link rel="canonical" href="https://connectinpuglia.com/airport-transfers" />
         <meta property="og:title" content="Airport Transfers Puglia — From BRI & BDS | ConnectinPuglia" />
-        <meta property="og:description" content="Private airport transfers from Bari Airport (BRI), Brindisi Airport (BDS), Bari Train Station, Bari Port and Brindisi Port. Fixed price, meet & greet, luxury Mercedes-Benz sedan." />
+        <meta property="og:description" content="Private airport transfers from Bari Airport (BRI), Brindisi Airport (BDS), Bari Train Station, Bari Port and Brindisi Port. Fixed price, meet & greet, luxury Audi A4 sedan." />
         <meta property="og:url" content="https://connectinpuglia.com/airport-transfers" />
         <meta property="og:image" content="https://connectinpuglia.com/images/main/airport-transfers-og.webp" />
         <meta property="og:type" content="website" />
       </Helmet>
       <TwitterMeta
         title="Airport Transfers Puglia — From BRI & BDS | ConnectinPuglia"
-        description="Private airport transfers from Bari Airport (BRI), Brindisi Airport (BDS), Bari Train Station, Bari Port and Brindisi Port. Fixed price, meet & greet, luxury Mercedes-Benz sedan."
+        description="Private airport transfers from Bari Airport (BRI), Brindisi Airport (BDS), Bari Train Station, Bari Port and Brindisi Port. Fixed price, meet & greet, luxury Audi A4 sedan."
         image="https://connectinpuglia.com/images/main/airport-transfers-og.webp"
       />
 

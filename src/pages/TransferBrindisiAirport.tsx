@@ -8,7 +8,7 @@ export default function TransferBrindisiAirport() {
       title="Private Transfer from Brindisi Airport — Door to Door, Fixed Price."
       subtitle="Book Your Brindisi Airport Transfer"
       metaTitle="Private Transfer from Brindisi Airport | ConnectinPuglia"
-      metaDesc="Book your private transfer from Brindisi Airport (BDS) with ConnectinPuglia. Fixed rates, meet and greet, Mercedes-Benz E-Class sedan. Direct to your masseria across Puglia. Available 24/7."
+      metaDesc="Book your private transfer from Brindisi Airport (BDS) with ConnectinPuglia. Fixed rates, meet and greet, Audi A4 sedan. Direct to your masseria across Puglia. Available 24/7."
       canonical="https://connectinpuglia.com/transfer-from-brindisi-airport"
       heroImg="/images/transfers/brindisi-airport-hero.webp"
       iataCode="BDS"

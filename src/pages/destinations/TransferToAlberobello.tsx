@@ -5,7 +5,7 @@ export default function TransferToAlberobello() {
   return (
     <DestinationTransferPage
       metaTitle="Private Transfer to Alberobello & Valle d'Itria | ConnectinPuglia"
-      metaDesc="Private transfer to Alberobello and the Valle d'Itria from Bari or Brindisi airport, or Bari Port. Fixed price, door to door, Mercedes-Benz E-Class sedan. ConnectinPuglia."
+      metaDesc="Private transfer to Alberobello and the Valle d'Itria from Bari or Brindisi airport, or Bari Port. Fixed price, door to door, Audi A4 sedan. ConnectinPuglia."
       canonical="https://connectinpuglia.com/transfer-to-alberobello-valle-ditria"
       heroImg="/images/destinations/alberobello-hero.webp"
       h1="Private Transfer to Alberobello & Valle d'Itria — Into the Heart of Puglia."

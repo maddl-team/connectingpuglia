@@ -6,7 +6,9 @@ import {
   FLEET_CAPACITY,
   FLEET_LUGGAGE,
   FLEET_VEHICLE,
+  fleetImageAlt,
   fleetMetaDescription,
+  fleetPageTitle,
 } from '../lib/fleet'
 
 const vehicle = {
@@ -16,24 +18,24 @@ const vehicle = {
   desc: 'Our premium business sedan for private transfers and day tours across Puglia. Discreet, refined, and perfectly suited to couples, solo travellers, and small groups.',
   features: ['Air conditioning', 'Leather interior', 'USB charging', 'WiFi on request', 'Water & magazines', 'Child seats on request'],
   img: '/images/fleet/our-fleet-card-1.webp',
-  imgAlt: 'Mercedes-Benz E-Class sedan — ConnectinPuglia private transfer vehicle',
+  imgAlt: fleetImageAlt,
 }
 
 export default function OurFleet() {
   return (
     <>
       <Helmet>
-        <title>Our Fleet — Mercedes-Benz E-Class | ConnectinPuglia</title>
+        <title>{fleetPageTitle}</title>
         <meta name="description" content={fleetMetaDescription} />
         <link rel="canonical" href="https://connectinpuglia.com/our-fleet" />
-        <meta property="og:title" content="Our Fleet — Mercedes-Benz E-Class | ConnectinPuglia" />
+        <meta property="og:title" content={fleetPageTitle} />
         <meta property="og:description" content={fleetMetaDescription} />
         <meta property="og:url" content="https://connectinpuglia.com/our-fleet" />
         <meta property="og:image" content="https://connectinpuglia.com/images/fleet/our-fleet-og.webp" />
         <meta property="og:type" content="website" />
       </Helmet>
       <TwitterMeta
-        title="Our Fleet — Mercedes-Benz E-Class | ConnectinPuglia"
+        title={fleetPageTitle}
         description={fleetMetaDescription}
         image="https://connectinpuglia.com/images/fleet/our-fleet-og.webp"
       />
@@ -46,7 +48,7 @@ export default function OurFleet() {
             Our Fleet
           </h1>
           <p className="font-sans text-white/70 max-w-2xl leading-relaxed">
-            ConnectinPuglia operates a premium {FLEET_VEHICLE} sedan — professionally maintained, fully licensed under NCC regulations, and comprehensively insured for passenger transport.
+            ConnectinPuglia operates a premium {FLEET_VEHICLE} — professionally maintained, fully licensed under NCC regulations, and comprehensively insured for passenger transport.
           </p>
         </div>
       </section>
@@ -55,7 +57,7 @@ export default function OurFleet() {
         <div className="container-page flex flex-wrap justify-center gap-8">
           {[
             { icon: <Shield size={14} />, text: 'NCC Licensed & Insured' },
-            { icon: <Car size={14} />, text: 'Mercedes-Benz E-Class' },
+            { icon: <Car size={14} />, text: FLEET_VEHICLE },
             { icon: <Wifi size={14} />, text: 'WiFi available on request' },
             { icon: <Users size={14} />, text: 'Up to 3 passengers' },
           ].map((item) => (
