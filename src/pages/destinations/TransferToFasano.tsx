@@ -1,32 +1,16 @@
 import DestinationTransferPage from '../../components/DestinationTransferPage'
+import { routesToFasano } from '../../lib/arrivalRoutes'
 
 export default function TransferToFasano() {
   return (
     <DestinationTransferPage
       metaTitle="Private Transfer to Fasano & Borgo Egnazia | ConnectinPuglia"
-      metaDesc="Private transfer to Fasano and Borgo Egnazia from Bari or Brindisi airport with ConnectinPuglia. Fixed rates, meet and greet, luxury fleet. Book your transfer now."
+      metaDesc="Private transfer to Fasano and Borgo Egnazia from Bari or Brindisi airport, or Bari Port. Fixed rates, meet and greet, Mercedes-Benz E-Class sedan. Book your transfer now."
       canonical="https://connectinpuglia.com/transfer-to-fasano-borgo-egnazia"
       heroImg="/images/destinations/fasano-hero.webp"
       h1="Private Transfer to Fasano & Borgo Egnazia — Arrive in Style."
-      subheadline="Your driver is waiting at arrivals. Fixed price, meet and greet, door to door from Bari or Brindisi airport directly to your masseria or resort in the Fasano area — no meters, no surprises."
-      routes={[
-        {
-          airport: 'Bari Airport',
-          airportCode: 'BRI · Bari Karol Wojtyla',
-          distance: '75 km',
-          time: 'approx 60 min',
-          via: 'A14 motorway',
-          recommended: false,
-        },
-        {
-          airport: 'Brindisi Airport',
-          airportCode: 'BDS · Brindisi Papola Casale',
-          distance: '40 km',
-          time: 'approx 35 min',
-          via: 'SS379',
-          recommended: true,
-        },
-      ]}
+      subheadline="Your driver is waiting at arrivals or dockside. Fixed price, meet and greet, door to door from Bari or Brindisi airport — or Bari Port — directly to your masseria or resort in the Fasano area."
+      routes={routesToFasano}
       aboutParagraphs={[
         "Fasano is the heart of Puglia's luxury belt — a quiet inland town surrounded by centuries-old olive groves, dry stone walls, and whitewashed masserie. This stretch of countryside between the Adriatic coast and the Valle d'Itria hills has become one of Italy's most coveted destinations for discerning travellers.",
         "The area is home to some of Puglia's most celebrated properties: Borgo Egnazia — the flagship resort that hosted the 2024 G7 summit and a favourite of international celebrities — along with Masseria San Domenico, Masseria Torre Maizza, and Masseria Torre Coccaro. The coastal hamlet of Savelletri di Fasano, just minutes away, offers direct Adriatic access.",
@@ -45,7 +29,7 @@ export default function TransferToFasano() {
       faqs={[
         {
           q: "What is the best way to get from Bari Airport to Borgo Egnazia?",
-          a: "Book a private transfer with ConnectinPuglia from Bari Airport (BRI). Your driver meets you in the arrivals hall with a name sign, assists with luggage, and takes you directly to the Borgo Egnazia entrance — approximately 60 minutes, fixed price."
+          a: "Book a private transfer with ConnectinPuglia from Bari Airport (BRI). Your driver meets you in the arrivals hall with a name sign, assists with luggage, and takes you directly to the Borgo Egnazia entrance — approximately 60 minutes via the SS16 Adriatica, fixed price."
         },
         {
           q: "What is the best way to get from Brindisi Airport to Fasano?",
@@ -57,7 +41,11 @@ export default function TransferToFasano() {
         },
         {
           q: "Is Bari or Brindisi airport closer to Fasano?",
-          a: "Brindisi Airport (BDS) is significantly closer — approximately 40km and 35 minutes. Bari Airport (BRI) is approximately 75km and 60 minutes. If you have a choice of airports, we recommend BDS for Fasano and the surrounding masserie."
+          a: "Brindisi Airport (BDS) is significantly closer — approximately 40km and 35 minutes. Bari Airport (BRI) is approximately 75km and 60 minutes via the SS16 Adriatica. If you have a choice of airports, we recommend BDS for Fasano and the surrounding masserie."
+        },
+        {
+          q: "Can I get a transfer from Bari Port to Fasano?",
+          a: "Yes — if you arrive by ferry at Bari Port from Greece or Albania, your ConnectinPuglia driver meets you dockside and takes you directly to Fasano in approximately 55 minutes via the SS16 Adriatica. Fixed price confirmed at booking."
         },
         {
           q: "Can ConnectinPuglia take me directly to my resort entrance?",
@@ -91,6 +79,7 @@ export default function TransferToFasano() {
       internalLinks={[
         { label: 'Transfer from Bari Airport', to: '/transfer-from-bari-airport' },
         { label: 'Transfer from Brindisi Airport', to: '/transfer-from-brindisi-airport' },
+        { label: 'Transfer from Bari Port', to: '/transfer-from-bari-port' },
         { label: 'Transfer to Borgo Egnazia', to: '/transfer-to-borgo-egnazia' },
         { label: 'Transfer to Ostuni', to: '/transfer-to-ostuni' },
         { label: "Private Tours from Fasano", to: '/private-tours-puglia' },

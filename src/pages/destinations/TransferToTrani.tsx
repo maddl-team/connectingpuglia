@@ -1,32 +1,16 @@
 import DestinationTransferPage from '../../components/DestinationTransferPage'
+import { routesToTrani } from '../../lib/arrivalRoutes'
 
 export default function TransferToTrani() {
   return (
     <DestinationTransferPage
       metaTitle="Private Transfer to Trani from Airport | ConnectinPuglia"
-      metaDesc="Private transfer to Trani from Bari Airport. Fixed price, professional driver, door to door. ConnectinPuglia — Puglia's luxury transfer specialist."
+      metaDesc="Private transfer to Trani from Bari Airport or Bari Port. Fixed price, professional driver, door to door. ConnectinPuglia — Puglia's luxury transfer specialist."
       canonical="https://connectinpuglia.com/transfer-to-trani"
       heroImg="/images/destinations/trani-hero.webp"
       h1="Private Transfer to Trani — The Cathedral on the Sea."
-      subheadline="Your driver meets you at Bari Airport and takes you directly to Trani — one of Puglia's most elegant coastal cities, known for its extraordinary Norman cathedral standing on the edge of the Adriatic."
-      routes={[
-        {
-          airport: 'Bari Airport',
-          airportCode: 'BRI · Bari Karol Wojtyla',
-          distance: '45 km',
-          time: 'approx 35–40 min',
-          via: 'A14 motorway north',
-          recommended: true,
-        },
-        {
-          airport: 'Brindisi Airport',
-          airportCode: 'BDS · Brindisi Papola Casale',
-          distance: '155 km',
-          time: 'approx 110–120 min',
-          via: 'A14 motorway',
-          recommended: false,
-        },
-      ]}
+      subheadline="Your driver meets you at Bari Airport or Bari Port and takes you directly to Trani — one of Puglia's most elegant coastal cities, known for its extraordinary Norman cathedral standing on the edge of the Adriatic."
+      routes={routesToTrani}
       aboutParagraphs={[
         "Trani is one of the least-visited and most rewarding cities in all of Puglia. Its Cathedral of San Nicola Pellegrino — a Norman masterpiece of white limestone built directly on a promontory above the Adriatic — is considered one of the most beautiful buildings in southern Italy. The Romanesque campanile and the setting against the sea make it genuinely unforgettable.",
         "Beyond the cathedral, Trani's historic centre offers a working harbour, ancient Jewish quarter, Swabian castle, and a sophisticated restaurant and wine bar scene built on the local Bombino Bianco wine. The city is notably less crowded than Polignano or Alberobello, which is part of its appeal.",
@@ -88,6 +72,7 @@ export default function TransferToTrani() {
       ]}
       internalLinks={[
         { label: 'Transfer from Bari Airport', to: '/transfer-from-bari-airport' },
+        { label: 'Transfer from Bari Port', to: '/transfer-from-bari-port' },
         { label: 'Transfer to Polignano a Mare', to: '/transfer-to-polignano-a-mare' },
         { label: 'Transfer to Fasano', to: '/transfer-to-fasano-borgo-egnazia' },
         { label: 'Private Tours in Puglia', to: '/private-tours-puglia' },

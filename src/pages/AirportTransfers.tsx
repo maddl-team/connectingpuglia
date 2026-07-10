@@ -31,6 +31,14 @@ const transferTypes = [
   },
   {
     icon: <Ship size={28} strokeWidth={1} />,
+    title: 'From Bari Port',
+    subtitle: 'Porto di Bari',
+    desc: 'Arriving by ferry from Greece or Albania? We meet you dockside at Bari Port and handle everything from there.',
+    to: '/transfer-from-bari-port',
+    time: '30–90 min to destinations',
+  },
+  {
+    icon: <Ship size={28} strokeWidth={1} />,
     title: 'From Brindisi Port',
     subtitle: 'Porto di Brindisi',
     desc: 'Arriving by ferry from Greece, Albania or Croatia? We meet you dockside and handle everything from there.',
@@ -44,17 +52,17 @@ export default function AirportTransfers() {
     <>
       <Helmet>
         <title>Airport Transfers Puglia — From BRI &amp; BDS | ConnectinPuglia</title>
-        <meta name="description" content="Private airport transfers from Bari Airport (BRI), Brindisi Airport (BDS), Bari Train Station and Brindisi Port. Fixed price, meet & greet, luxury fleet." />
+        <meta name="description" content="Private airport transfers from Bari Airport (BRI), Brindisi Airport (BDS), Bari Train Station, Bari Port and Brindisi Port. Fixed price, meet & greet, luxury Mercedes-Benz sedan." />
         <link rel="canonical" href="https://connectinpuglia.com/airport-transfers" />
         <meta property="og:title" content="Airport Transfers Puglia — From BRI & BDS | ConnectinPuglia" />
-        <meta property="og:description" content="Private airport transfers from Bari Airport (BRI), Brindisi Airport (BDS), Bari Train Station and Brindisi Port. Fixed price, meet & greet, luxury fleet." />
+        <meta property="og:description" content="Private airport transfers from Bari Airport (BRI), Brindisi Airport (BDS), Bari Train Station, Bari Port and Brindisi Port. Fixed price, meet & greet, luxury Mercedes-Benz sedan." />
         <meta property="og:url" content="https://connectinpuglia.com/airport-transfers" />
         <meta property="og:image" content="https://connectinpuglia.com/images/main/airport-transfers-og.webp" />
         <meta property="og:type" content="website" />
       </Helmet>
       <TwitterMeta
         title="Airport Transfers Puglia — From BRI & BDS | ConnectinPuglia"
-        description="Private airport transfers from Bari Airport (BRI), Brindisi Airport (BDS), Bari Train Station and Brindisi Port. Fixed price, meet & greet, luxury fleet."
+        description="Private airport transfers from Bari Airport (BRI), Brindisi Airport (BDS), Bari Train Station, Bari Port and Brindisi Port. Fixed price, meet & greet, luxury Mercedes-Benz sedan."
         image="https://connectinpuglia.com/images/main/airport-transfers-og.webp"
       />
 
@@ -68,7 +76,7 @@ export default function AirportTransfers() {
             Private Airport Transfers in Puglia
           </h1>
           <p className="font-sans text-white/75 max-w-2xl mx-auto text-lg leading-relaxed mb-10">
-            Fixed price, professional driver, door to door. From Bari or Brindisi airport, Bari train station, or Brindisi port — directly to your masseria, hotel, or private villa.
+            Fixed price, professional driver, door to door. From Bari or Brindisi airport, Bari train station, or Bari and Brindisi port — directly to your masseria, hotel, or private villa.
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             {[

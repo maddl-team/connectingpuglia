@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { MapPin, Phone, Mail, Instagram, Facebook } from 'lucide-react'
+import BrandLogo from '../BrandLogo'
 
 const footerLinks = [
   {
@@ -8,6 +9,7 @@ const footerLinks = [
       { label: 'From Bari Airport', to: '/transfer-from-bari-airport' },
       { label: 'From Brindisi Airport', to: '/transfer-from-brindisi-airport' },
       { label: 'From Bari Train Station', to: '/transfer-from-bari-train-station' },
+      { label: 'From Bari Port', to: '/transfer-from-bari-port' },
       { label: 'From Brindisi Port', to: '/transfer-from-brindisi-port' },
       { label: 'All Airport Transfers', to: '/airport-transfers' },
     ],
@@ -42,13 +44,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 pb-12 border-b border-charcoal-700">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link to="/" className="flex flex-col leading-none mb-6">
-              <span className="font-serif text-2xl font-medium tracking-wide">
-                Connectin<span className="text-gold-500">Puglia</span>
-              </span>
-              <span className="font-sans text-[10px] tracking-[0.25em] uppercase text-white/50 mt-1">
-                Private Transfers &amp; Tours
-              </span>
+            <Link to="/" className="inline-block mb-6" aria-label="ConnectinPuglia home">
+              <BrandLogo height={52} />
             </Link>
             <p className="font-sans text-sm text-white/60 leading-relaxed max-w-xs mb-6">
               Your premium private transfer and tour partner in Puglia — professional, warm, and deeply local.

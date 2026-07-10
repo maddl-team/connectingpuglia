@@ -1,32 +1,16 @@
 import DestinationTransferPage from '../../components/DestinationTransferPage'
+import { routesToMatera } from '../../lib/arrivalRoutes'
 
 export default function TransferToMatera() {
   return (
     <DestinationTransferPage
       metaTitle="Private Transfer to Matera from Puglia | ConnectinPuglia"
-      metaDesc="Private transfer to Matera from Bari Airport or Puglia masserie. Fixed price, door to door. ConnectinPuglia — Puglia's luxury transfer specialist."
+      metaDesc="Private transfer to Matera from Bari Airport, Bari Port, or Puglia masserie. Fixed price, door to door. ConnectinPuglia — Puglia's luxury transfer specialist."
       canonical="https://connectinpuglia.com/transfer-to-matera-from-puglia"
       heroImg="/images/destinations/matera-hero.webp"
       h1="Private Transfer to Matera from Puglia — Into the Ancient City."
-      subheadline="Your driver takes you directly from Bari Airport or your Puglia masseria to the UNESCO Sassi di Matera — one of the world's most extraordinary ancient cities."
-      routes={[
-        {
-          airport: 'Bari Airport',
-          airportCode: 'BRI · Bari Karol Wojtyla',
-          distance: '65 km',
-          time: 'approx 80–90 min',
-          via: 'SS96 / SP7',
-          recommended: true,
-        },
-        {
-          airport: 'Brindisi Airport',
-          airportCode: 'BDS · Brindisi Papola Casale',
-          distance: '120 km',
-          time: 'approx 100–110 min',
-          via: 'SS379 / SS7',
-          recommended: false,
-        },
-      ]}
+      subheadline="Your driver takes you directly from Bari Airport, Bari Port, or your Puglia masseria to the UNESCO Sassi di Matera — one of the world's most extraordinary ancient cities."
+      routes={routesToMatera}
       aboutParagraphs={[
         "Matera is one of the world's oldest continuously inhabited cities and a UNESCO World Heritage Site — a place that takes the breath away when first encountered. Its ancient Sassi districts (Sasso Caveoso and Sasso Barisano) are carved directly into the ravine walls, a labyrinthine network of cave churches, cisterns, and stone dwellings inhabited since the Palaeolithic era.",
         "Officially in the Basilicata region just across the border from Puglia, Matera is one of the most popular day trips and short stays for guests based in the Puglia masserie. The journey from Bari Airport is approximately 80–90 minutes; from the Fasano or Alberobello area, approximately 75–90 minutes.",
@@ -88,6 +72,7 @@ export default function TransferToMatera() {
       ]}
       internalLinks={[
         { label: 'Transfer from Bari Airport', to: '/transfer-from-bari-airport' },
+        { label: 'Transfer from Bari Port', to: '/transfer-from-bari-port' },
         { label: 'Transfer to Fasano & Borgo Egnazia', to: '/transfer-to-fasano-borgo-egnazia' },
         { label: "Transfer to Alberobello & Valle d'Itria", to: '/transfer-to-alberobello-valle-ditria' },
         { label: 'How to Get Around Puglia Without a Car', to: '/how-to-get-around-puglia-without-a-car' },

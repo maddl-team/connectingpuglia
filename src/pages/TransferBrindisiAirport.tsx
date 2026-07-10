@@ -1,4 +1,5 @@
 import TransferPageTemplate from '../components/TransferPageTemplate'
+import { fleetVehicleFaq } from '../lib/fleet'
 
 export default function TransferBrindisiAirport() {
   return (
@@ -7,7 +8,7 @@ export default function TransferBrindisiAirport() {
       title="Private Transfer from Brindisi Airport — Door to Door, Fixed Price."
       subtitle="Book Your Brindisi Airport Transfer"
       metaTitle="Private Transfer from Brindisi Airport | ConnectinPuglia"
-      metaDesc="Book your private transfer from Brindisi Airport (BDS) with ConnectinPuglia. Fixed rates, meet and greet, luxury fleet. Direct to your masseria across Puglia. Available 24/7."
+      metaDesc="Book your private transfer from Brindisi Airport (BDS) with ConnectinPuglia. Fixed rates, meet and greet, Mercedes-Benz E-Class sedan. Direct to your masseria across Puglia. Available 24/7."
       canonical="https://connectinpuglia.com/transfer-from-brindisi-airport"
       heroImg="/images/transfers/brindisi-airport-hero.webp"
       iataCode="BDS"
@@ -39,7 +40,7 @@ export default function TransferBrindisiAirport() {
         { q: 'How far is Brindisi Airport from Fasano and the masserie?', a: 'Brindisi is the closest airport to Fasano, Ostuni, and the Itria Valley masserie. Most properties are 25–40 minutes from BDS, significantly shorter than from Bari.' },
         { q: 'What if my flight is delayed?', a: 'We monitor all flights in real time. If your flight is delayed, your driver automatically adjusts and waits at no extra charge.' },
         { q: 'Can I book a return transfer from my masseria to Brindisi Airport?', a: 'Yes — we strongly recommend booking both directions simultaneously. Your driver will collect you at your property and take you directly to departures.' },
-        { q: 'Which vehicles are available from Brindisi Airport?', a: 'Mercedes-Benz Classe E (up to 3 passengers), Classe V (up to 7 passengers), and Vito Minibus (up to 8 passengers). All air-conditioned, WiFi on request.' },
+        { q: 'Which vehicles are available from Brindisi Airport?', a: fleetVehicleFaq },
         { q: 'Do you cover Brindisi Airport to Lecce?', a: 'Yes — Lecce is approximately 35 minutes from Brindisi Airport. We offer direct transfers as well as full-day tours combining transfer and guided city visit.' },
         { q: 'How do I book a Brindisi Airport transfer?', a: 'Use the enquiry form or contact us via WhatsApp. We confirm your fixed price within 2 hours.' },
       ]}

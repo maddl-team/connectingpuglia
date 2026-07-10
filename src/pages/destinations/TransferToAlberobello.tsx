@@ -1,32 +1,16 @@
 import DestinationTransferPage from '../../components/DestinationTransferPage'
+import { routesToAlberobello } from '../../lib/arrivalRoutes'
 
 export default function TransferToAlberobello() {
   return (
     <DestinationTransferPage
       metaTitle="Private Transfer to Alberobello & Valle d'Itria | ConnectinPuglia"
-      metaDesc="Private transfer to Alberobello and the Valle d'Itria from Bari or Brindisi airports. Fixed price, door to door, luxury fleet. ConnectinPuglia."
+      metaDesc="Private transfer to Alberobello and the Valle d'Itria from Bari or Brindisi airport, or Bari Port. Fixed price, door to door, Mercedes-Benz E-Class sedan. ConnectinPuglia."
       canonical="https://connectinpuglia.com/transfer-to-alberobello-valle-ditria"
       heroImg="/images/destinations/alberobello-hero.webp"
       h1="Private Transfer to Alberobello & Valle d'Itria — Into the Heart of Puglia."
-      subheadline="Your driver meets you at the airport and delivers you directly to your trullo, masseria, or hotel — no GPS confusion in the UNESCO trulli district, no ZTL worries."
-      routes={[
-        {
-          airport: 'Bari Airport',
-          airportCode: 'BRI · Bari Karol Wojtyla',
-          distance: '65 km',
-          time: 'approx 55 min',
-          via: 'SS96 / SP5',
-          recommended: false,
-        },
-        {
-          airport: 'Brindisi Airport',
-          airportCode: 'BDS · Brindisi Papola Casale',
-          distance: '55 km',
-          time: 'approx 45 min',
-          via: 'SS379 / SP23',
-          recommended: true,
-        },
-      ]}
+      subheadline="Your driver meets you at the airport or Bari Port and delivers you directly to your trullo, masseria, or hotel — no GPS confusion in the UNESCO trulli district, no ZTL worries."
+      routes={routesToAlberobello}
       aboutParagraphs={[
         "Alberobello is one of the most extraordinary places in Italy — a UNESCO World Heritage Site whose trulli district, Rione Monti, contains over 1,500 of the region's iconic conical stone dwellings. No photograph fully prepares you for the reality of arriving among them.",
         "The Valle d'Itria extends around Alberobello in a landscape of vineyards, olive groves, and storybook hilltop villages: Locorotondo with its circular layout and white-painted houses, Cisternino with its celebrated butcher-restaurants, and Martina Franca with its elegant Baroque palazzi. Together they form one of Puglia's most complete and rewarding areas to explore.",
@@ -89,6 +73,7 @@ export default function TransferToAlberobello() {
       internalLinks={[
         { label: 'Transfer from Bari Airport', to: '/transfer-from-bari-airport' },
         { label: 'Transfer from Brindisi Airport', to: '/transfer-from-brindisi-airport' },
+        { label: 'Transfer from Bari Port', to: '/transfer-from-bari-port' },
         { label: "Valle d'Itria Day Tour", to: '/tour-valle-ditria' },
         { label: 'Le Alcove Alberobello Transfer', to: '/transfer-to-le-alcove-alberobello' },
         { label: 'Transfer to Fasano', to: '/transfer-to-fasano-borgo-egnazia' },

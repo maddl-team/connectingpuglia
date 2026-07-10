@@ -249,6 +249,8 @@ export default function TransferPageTemplate({
             {[
               { label: 'Transfer from Bari Airport', to: '/transfer-from-bari-airport' },
               { label: 'Transfer from Brindisi Airport', to: '/transfer-from-brindisi-airport' },
+              { label: 'Transfer from Bari Port', to: '/transfer-from-bari-port' },
+              { label: 'Transfer from Brindisi Port', to: '/transfer-from-brindisi-port' },
               { label: 'Private Tours in Puglia', to: '/private-tours-puglia' },
               { label: 'Our Fleet', to: '/our-fleet' },
               { label: 'All Services', to: '/airport-transfers' },

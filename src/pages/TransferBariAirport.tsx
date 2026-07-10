@@ -16,6 +16,7 @@ import {
   Wifi,
 } from 'lucide-react'
 import HeroImage from '../components/HeroImage'
+import { fleetVehicleFaq } from '../lib/fleet'
 import TwitterMeta from '../components/TwitterMeta'
 
 const destinations = [
@@ -65,7 +66,7 @@ const faqs = [
   },
   {
     q: 'Which vehicles are available?',
-    a: 'Mercedes-Benz Classe E (up to 3 passengers), Classe V (up to 7 passengers), and Vito Minibus (up to 8 passengers). All vehicles are air-conditioned. WiFi available on request.',
+    a: fleetVehicleFaq,
   },
   {
     q: 'Do you cover Bari Airport to Matera?',
@@ -139,11 +140,11 @@ export default function TransferBariAirport() {
         <title>Private Transfer from Bari Airport | ConnectinPuglia</title>
         <meta
           name="description"
-          content="Book your private transfer from Bari Airport with ConnectinPuglia. Fixed rates, meet and greet, luxury fleet. Direct to your masseria, hotel, or resort across Puglia. Available 24/7."
+          content="Book your private transfer from Bari Airport with ConnectinPuglia. Fixed rates, meet and greet, Mercedes-Benz E-Class sedan. Direct to your masseria, hotel, or resort across Puglia. Available 24/7."
         />
         <link rel="canonical" href="https://connectinpuglia.com/transfer-from-bari-airport" />
         <meta property="og:title" content="Private Transfer from Bari Airport | ConnectinPuglia" />
-        <meta property="og:description" content="Book your private transfer from Bari Airport with ConnectinPuglia. Fixed rates, meet and greet, luxury fleet. Direct to your masseria, hotel, or resort across Puglia." />
+        <meta property="og:description" content="Book your private transfer from Bari Airport with ConnectinPuglia. Fixed rates, meet and greet, Mercedes-Benz E-Class sedan. Direct to your masseria, hotel, or resort across Puglia." />
         <meta property="og:url" content="https://connectinpuglia.com/transfer-from-bari-airport" />
         <meta property="og:image" content="https://connectinpuglia.com/images/transfers/bari-airport-hero.webp" />
         <meta property="og:type" content="website" />
@@ -163,7 +164,7 @@ export default function TransferBariAirport() {
       </Helmet>
       <TwitterMeta
         title="Private Transfer from Bari Airport | ConnectinPuglia"
-        description="Book your private transfer from Bari Airport with ConnectinPuglia. Fixed rates, meet and greet, luxury fleet. Direct to your masseria, hotel, or resort across Puglia."
+        description="Book your private transfer from Bari Airport with ConnectinPuglia. Fixed rates, meet and greet, Mercedes-Benz E-Class sedan. Direct to your masseria, hotel, or resort across Puglia."
         image="https://connectinpuglia.com/images/transfers/bari-airport-hero.webp"
       />
 

@@ -1,4 +1,5 @@
 import TransferPageTemplate from '../components/TransferPageTemplate'
+import { fleetVehicleFaq } from '../lib/fleet'
 
 export default function TransferBariTrainStation() {
   return (
@@ -37,7 +38,7 @@ export default function TransferBariTrainStation() {
         { q: 'How long does it take from Bari station to a masseria?', a: 'Most masserie in the Fasano area are 55–65 minutes from Bari Centrale. Polignano a Mare and Monopoli are 30–35 minutes.' },
         { q: 'Can you wait if my train is delayed?', a: 'Yes — we monitor train arrivals and your driver adjusts automatically. No extra charge for train delays.' },
         { q: 'Can I book a return transfer to Bari station?', a: 'Yes — we offer both directions. Book simultaneously for the best availability.' },
-        { q: 'Which vehicles are available?', a: 'Mercedes-Benz E-Class (3 pax), V-Class (7 pax), Vito (8 pax). All air-conditioned, WiFi on request.' },
+        { q: 'Which vehicles are available?', a: fleetVehicleFaq },
         { q: 'Can you take me from Bari station to Matera?', a: 'Yes — Matera is approximately 85 minutes from Bari Centrale. We also offer full-day tours combining the transfer with a Matera guided visit.' },
         { q: 'How do I book?', a: 'Use the enquiry form or WhatsApp. We confirm your fixed price within 2 hours.' },
       ]}

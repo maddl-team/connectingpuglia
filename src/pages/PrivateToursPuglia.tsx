@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async'
+import { fleetTourFaq } from '../lib/fleet'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { ArrowRight, Clock, Users, Star, CheckCircle, MapPin, ChevronDown, ChevronUp, MessageCircle } from 'lucide-react'
@@ -63,7 +64,7 @@ const departurePts = [
 
 const faqs = [
   { q: 'What is included in a private tour?', a: 'Your driver, the vehicle, fuel, and all logistics — including picks up and drop off from your accommodation. Entrance fees, meals, and tastings are at your own cost and can be pre-arranged on request.' },
-  { q: 'How many people can join a private tour?', a: 'Our tours are 100% private — for your group only. The Mercedes-Benz E-Class accommodates up to 3 passengers; the V-Class up to 7; the Vito Minibus up to 8. All prices are per vehicle, not per person.' },
+  { q: 'How many people can join a private tour?', a: fleetTourFaq },
   { q: 'Can I customise the itinerary?', a: 'Absolutely — all our tours are fully flexible. Tell us what interests you most and we will build the day around your preferences. The itineraries on this page are starting points, not fixed programmes.' },
   { q: 'What do private tours cost?', a: 'All prices are fixed and agreed in advance. The exact price depends on your vehicle, departure point, and tour duration. Contact us via the form or WhatsApp for an immediate quote.' },
   { q: 'Do the drivers speak English?', a: 'Yes — all ConnectinPuglia drivers speak fluent English and have local knowledge to share throughout the day. Many guests describe their driver as one of the highlights of their tour.' },

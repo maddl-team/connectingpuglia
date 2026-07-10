@@ -1,4 +1,5 @@
 import TransferPageTemplate from '../components/TransferPageTemplate'
+import { fleetVehicleFaq } from '../lib/fleet'
 
 export default function TransferBrindisiPort() {
   return (
@@ -37,7 +38,7 @@ export default function TransferBrindisiPort() {
         { q: 'Can you wait if my ferry is delayed?', a: 'Yes — we monitor all ferry schedules and your driver adjusts automatically. No extra charge for delays.' },
         { q: 'How long does it take from Brindisi Port to a masseria?', a: 'Most masserie in the Fasano and Ostuni area are 30–40 minutes from Brindisi Port. It is the most convenient port arrival point for the Itria Valley.' },
         { q: 'Can I book a return transfer to Brindisi Port?', a: 'Yes — we offer transfers in both directions. We recommend booking both simultaneously.' },
-        { q: 'Which vehicles are available?', a: 'Mercedes-Benz E-Class (3 pax), V-Class (7 pax), Vito (8 pax). All air-conditioned, WiFi on request.' },
+        { q: 'Which vehicles are available?', a: fleetVehicleFaq },
         { q: 'Can you help with luggage after a long ferry crossing?', a: 'Absolutely — luggage assistance is always included. Your driver will help you from the moment you disembark.' },
         { q: 'How do I book?', a: 'Use the enquiry form or WhatsApp. We confirm your fixed price within 2 hours.' },
       ]}

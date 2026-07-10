@@ -30,7 +30,7 @@ export type DestinationPageProps = {
   heroImg: string
   h1: string
   subheadline: string
-  routes: [RouteCard, RouteCard]
+  routes: RouteCard[]
   aboutParagraphs: string[]
   propertiesServed: PropertyLink[]
   faqs: { q: string; a: string }[]
@@ -156,7 +156,7 @@ export default function DestinationTransferPage({
             <span className="divider-gold mx-auto mb-6 block" />
             <h2 className="section-title text-charcoal-900">Your Route to the Destination</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          <div className={`grid grid-cols-1 gap-6 mx-auto ${routes.length >= 3 ? 'md:grid-cols-2 lg:grid-cols-3 max-w-5xl' : 'md:grid-cols-2 max-w-3xl'}`}>
             {routes.map(route => (
               <div
                 key={route.airportCode}
@@ -325,6 +325,7 @@ export default function DestinationTransferPage({
             {(internalLinks ?? [
               { label: 'Transfer from Bari Airport', to: '/transfer-from-bari-airport' },
               { label: 'Transfer from Brindisi Airport', to: '/transfer-from-brindisi-airport' },
+              { label: 'Transfer from Bari Port', to: '/transfer-from-bari-port' },
               { label: 'Private Tours in Puglia', to: '/private-tours-puglia' },
               { label: 'Our Fleet', to: '/our-fleet' },
               { label: 'All Airport Transfers', to: '/airport-transfers' },

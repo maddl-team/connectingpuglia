@@ -9,17 +9,17 @@ export default function WeddingTransfer() {
     <>
       <Helmet>
         <title>Wedding Transfers Puglia — Destination Wedding Transport | ConnectinPuglia</title>
-        <meta name="description" content="Professional wedding transport in Puglia. Multi-vehicle coordination, airport arrivals, ceremony and reception logistics. NCC licensed, elegant fleet." />
+        <meta name="description" content="Professional wedding transport in Puglia. Guest airport transfers, ceremony and reception logistics. NCC licensed, Mercedes-Benz E-Class sedan." />
         <link rel="canonical" href="https://connectinpuglia.com/wedding-transfer-puglia" />
         <meta property="og:title" content="Wedding Transfers Puglia — Destination Wedding Transport | ConnectinPuglia" />
-        <meta property="og:description" content="Professional wedding transport in Puglia. Multi-vehicle coordination, airport arrivals, ceremony and reception logistics. NCC licensed, elegant fleet." />
+        <meta property="og:description" content="Professional wedding transport in Puglia. Guest airport transfers, ceremony and reception logistics. NCC licensed, Mercedes-Benz E-Class sedan." />
         <meta property="og:url" content="https://connectinpuglia.com/wedding-transfer-puglia" />
         <meta property="og:image" content="https://connectinpuglia.com/images/main/wedding-transfer-og.webp" />
         <meta property="og:type" content="website" />
       </Helmet>
       <TwitterMeta
         title="Wedding Transfers Puglia — Destination Wedding Transport | ConnectinPuglia"
-        description="Professional wedding transport in Puglia. Multi-vehicle coordination, airport arrivals, ceremony and reception logistics. NCC licensed, elegant fleet."
+        description="Professional wedding transport in Puglia. Guest airport transfers, ceremony and reception logistics. NCC licensed, Mercedes-Benz E-Class sedan."
         image="https://connectinpuglia.com/images/main/wedding-transfer-og.webp"
       />
 

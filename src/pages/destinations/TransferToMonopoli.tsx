@@ -1,32 +1,16 @@
 import DestinationTransferPage from '../../components/DestinationTransferPage'
+import { routesToMonopoli } from '../../lib/arrivalRoutes'
 
 export default function TransferToMonopoli() {
   return (
     <DestinationTransferPage
       metaTitle="Private Transfer to Monopoli from Airport | ConnectinPuglia"
-      metaDesc="Private transfer to Monopoli from Bari or Brindisi airport. Fixed price, professional driver, door to door. ConnectinPuglia."
+      metaDesc="Private transfer to Monopoli from Bari or Brindisi airport, or Bari Port. Fixed price, professional driver, door to door. ConnectinPuglia."
       canonical="https://connectinpuglia.com/transfer-to-monopoli"
       heroImg="/images/destinations/monopoli-hero.webp"
       h1="Private Transfer to Monopoli — Fixed Price, Door to Door."
-      subheadline="Your driver meets you at arrivals and takes you directly to Monopoli's historic harbour or your hotel — no meters, no navigation, fixed price confirmed before you travel."
-      routes={[
-        {
-          airport: 'Bari Airport',
-          airportCode: 'BRI · Bari Karol Wojtyla',
-          distance: '50 km',
-          time: 'approx 40–45 min',
-          via: 'A14 motorway',
-          recommended: false,
-        },
-        {
-          airport: 'Brindisi Airport',
-          airportCode: 'BDS · Brindisi Papola Casale',
-          distance: '60 km',
-          time: 'approx 45–50 min',
-          via: 'SS379 / A14',
-          recommended: false,
-        },
-      ]}
+      subheadline="Your driver meets you at arrivals or dockside and takes you directly to Monopoli's historic harbour or your hotel — no meters, no navigation, fixed price confirmed before you travel."
+      routes={routesToMonopoli}
       aboutParagraphs={[
         "Monopoli is one of Puglia's most engaging coastal towns — a working fishing harbour surrounded by Baroque churches, a medieval castle, and streets filled with the smell of fresh seafood and wood-fired bread. Unlike more tourist-heavy destinations, Monopoli retains a genuine local character that makes it one of the region's most rewarding places to stay.",
         "The coastline around Monopoli offers some of the best beaches in northern Puglia, and the town makes an excellent base for exploring both the Adriatic coast and the Valle d'Itria inland. Alberobello is just 30 minutes away; Polignano a Mare is 15 minutes north; Fasano and Ostuni are 25–40 minutes south.",
@@ -88,6 +72,7 @@ export default function TransferToMonopoli() {
       ]}
       internalLinks={[
         { label: 'Transfer from Bari Airport', to: '/transfer-from-bari-airport' },
+        { label: 'Transfer from Bari Port', to: '/transfer-from-bari-port' },
         { label: 'Masseria Il Melograno Transfer', to: '/transfer-to-masseria-il-melograno' },
         { label: 'Transfer to Polignano a Mare', to: '/transfer-to-polignano-a-mare' },
         { label: 'Transfer to Fasano', to: '/transfer-to-fasano-borgo-egnazia' },

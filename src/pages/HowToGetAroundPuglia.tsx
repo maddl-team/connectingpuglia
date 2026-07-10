@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { ArrowRight, CheckCircle, XCircle, AlertCircle, ChevronDown, ChevronUp, MessageCircle } from 'lucide-react'
 import HeroImage from '../components/HeroImage'
+import { fleetFamilyFaq } from '../lib/fleet'
 import TwitterMeta from '../components/TwitterMeta'
 
 const transport = [
@@ -104,7 +105,7 @@ const faqs = [
   },
   {
     q: 'What is the best vehicle for families travelling without a car?',
-    a: 'The Mercedes-Benz Classe V accommodates up to 7 passengers plus luggage — ideal for families. Child seats are available on request. No car hire, no fitting car seats at the airport, no navigating with tired children.',
+    a: fleetFamilyFaq,
   },
   {
     q: 'Can ConnectinPuglia manage my entire stay\'s transport?',

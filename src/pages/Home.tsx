@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Car, MapPin, Star, Shield, Clock, Users } from 'lucide-react'
 import HeroImage from '../components/HeroImage'
+import { fleetHomeDescription } from '../lib/fleet'
 import TwitterMeta from '../components/TwitterMeta'
 
 const services = [
@@ -184,7 +185,7 @@ export default function Home() {
               <div className="flex flex-col gap-5">
                 {[
                   { icon: <Shield size={18} strokeWidth={1.5} />, title: 'NCC Licensed', desc: 'Fully licensed and insured private hire operator, compliant with Italian law.' },
-                  { icon: <Star size={18} strokeWidth={1.5} />, title: 'Premium Fleet', desc: 'Mercedes-Benz E-Class, V-Class, and S-Class vehicles, immaculately maintained.' },
+                  { icon: <Star size={18} strokeWidth={1.5} />, title: 'Premium Fleet', desc: fleetHomeDescription },
                   { icon: <Users size={18} strokeWidth={1.5} />, title: 'Local Expertise', desc: 'Drivers who know every road, masseria, and hidden gem in the region.' },
                   { icon: <Clock size={18} strokeWidth={1.5} />, title: 'Always On Time', desc: 'Flight tracking and proactive communication — we are there before you need us.' },
                 ].map((item) => (

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { NavLink, Link, useLocation } from 'react-router-dom'
 import { Menu, X, ChevronDown } from 'lucide-react'
+import BrandLogo from '../BrandLogo'
 
 type DropdownItem = { label: string; to: string }
 
@@ -16,6 +17,7 @@ const navItems: NavItem[] = [
       { label: 'From Bari Airport', to: '/transfer-from-bari-airport' },
       { label: 'From Brindisi Airport', to: '/transfer-from-brindisi-airport' },
       { label: 'From Bari Train Station', to: '/transfer-from-bari-train-station' },
+      { label: 'From Bari Port', to: '/transfer-from-bari-port' },
       { label: 'From Brindisi Port', to: '/transfer-from-brindisi-port' },
     ],
   },
@@ -148,13 +150,8 @@ export default function Header() {
       >
         <div className="container-page flex items-center justify-between gap-6">
           {/* Logo */}
-          <Link to="/" className="flex flex-col leading-none flex-none group">
-            <span className="font-serif text-lg font-medium tracking-wide text-white group-hover:text-gold-400 transition-colors duration-300">
-              Connectin<span className="text-gold-500">Puglia</span>
-            </span>
-            <span className="font-sans text-[9px] tracking-[0.22em] uppercase text-white/50 mt-0.5">
-              Private Transfers &amp; Tours
-            </span>
+          <Link to="/" className="flex-none group" aria-label="ConnectinPuglia home">
+            <BrandLogo height={38} className="group-hover:opacity-90 transition-opacity duration-300" />
           </Link>
 
           {/* CTA — always visible */}
@@ -183,6 +180,9 @@ export default function Header() {
         }`}
       >
         <div className="flex flex-col gap-5 mt-6">
+          <Link to="/" onClick={() => setMenuOpen(false)} className="mb-2 self-start">
+            <BrandLogo height={44} />
+          </Link>
           {navItems.map((item) => (
             <DrawerNavItem key={item.label} item={item} onClose={() => setMenuOpen(false)} />
           ))}

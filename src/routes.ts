@@ -12,6 +12,7 @@ export const PRERENDER_ROUTES = [
   '/transfer-from-bari-airport',
   '/transfer-from-brindisi-airport',
   '/transfer-from-bari-train-station',
+  '/transfer-from-bari-port',
   '/transfer-from-brindisi-port',
   '/transfer-to-fasano-borgo-egnazia',
   '/transfer-to-ostuni',

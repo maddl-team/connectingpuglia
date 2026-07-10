@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 import { toAbsoluteUrl } from '../../lib/seo'
+import { fleetTourFaq } from '../../lib/fleet'
 import HeroImage from '../../components/HeroImage'
 import TwitterMeta from '../../components/TwitterMeta'
 import { Link } from 'react-router-dom'
@@ -257,7 +258,7 @@ const sharedDepartures = [
 
 const sharedFaqs: TourFaq[] = [
   { q: 'What is included in the tour price?', a: 'Your driver, vehicle, fuel, and all logistics. Entrance fees, meals, and tastings are at your own cost and can be pre-arranged on request.' },
-  { q: 'How many people can join?', a: '100% private — your group only. Mercedes-Benz E-Class (3 pax), V-Class (7 pax), Vito Minibus (8 pax). All prices are per vehicle, not per person.' },
+  { q: 'How many people can join?', a: fleetTourFaq },
   { q: 'Can I customise the itinerary?', a: 'Yes — all itineraries are fully flexible. Tell us your priorities and we build the day around you.' },
   { q: 'What does the tour cost?', a: 'Fixed price agreed in advance. Contact us via form or WhatsApp for an immediate quote.' },
   { q: 'Do drivers speak English?', a: 'Yes — fluent English, local knowledge, and genuine enthusiasm for the region. Many guests say their driver was a highlight of the day.' },

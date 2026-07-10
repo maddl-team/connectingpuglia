@@ -16,6 +16,7 @@ import QuoteContact from './pages/QuoteContact'
 import TransferBariAirport from './pages/TransferBariAirport'
 import TransferBrindisiAirport from './pages/TransferBrindisiAirport'
 import TransferBariTrainStation from './pages/TransferBariTrainStation'
+import TransferBariPort from './pages/TransferBariPort'
 import TransferBrindisiPort from './pages/TransferBrindisiPort'
 
 // Destination pages (/transfer-to-X)
@@ -81,6 +82,7 @@ export default function App() {
           <Route path="transfer-from-bari-airport" element={<TransferBariAirport />} />
           <Route path="transfer-from-brindisi-airport" element={<TransferBrindisiAirport />} />
           <Route path="transfer-from-bari-train-station" element={<TransferBariTrainStation />} />
+          <Route path="transfer-from-bari-port" element={<TransferBariPort />} />
           <Route path="transfer-from-brindisi-port" element={<TransferBrindisiPort />} />
 
           {/* Destinations */}

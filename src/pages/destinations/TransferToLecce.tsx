@@ -1,32 +1,16 @@
 import DestinationTransferPage from '../../components/DestinationTransferPage'
+import { routesToLecce } from '../../lib/arrivalRoutes'
 
 export default function TransferToLecce() {
   return (
     <DestinationTransferPage
       metaTitle="Private Transfer to Lecce from Airport | ConnectinPuglia"
-      metaDesc="Private transfer to Lecce from Bari or Brindisi airport. Fixed price, meet and greet, direct to your hotel in the Baroque capital of the South. ConnectinPuglia."
+      metaDesc="Private transfer to Lecce from Bari or Brindisi airport, or Bari Port. Fixed price, meet and greet, direct to your hotel in the Baroque capital of the South. ConnectinPuglia."
       canonical="https://connectinpuglia.com/transfer-to-lecce"
       heroImg="/images/destinations/lecce-hero.webp"
       h1="Private Transfer to Lecce — The Florence of the South."
-      subheadline="Your driver meets you at the airport and delivers you directly to your Lecce hotel — navigating the ZTL on your behalf, fixed price confirmed before you travel."
-      routes={[
-        {
-          airport: 'Brindisi Airport',
-          airportCode: 'BDS · Brindisi Papola Casale',
-          distance: '38 km',
-          time: 'approx 35–40 min',
-          via: 'SS613',
-          recommended: true,
-        },
-        {
-          airport: 'Bari Airport',
-          airportCode: 'BRI · Bari Karol Wojtyla',
-          distance: '135 km',
-          time: 'approx 90–100 min',
-          via: 'A14 / SS16',
-          recommended: false,
-        },
-      ]}
+      subheadline="Your driver meets you at the airport or Bari Port and delivers you directly to your Lecce hotel — navigating the ZTL on your behalf, fixed price confirmed before you travel."
+      routes={routesToLecce}
       aboutParagraphs={[
         "Lecce is one of the great surprises of Italian travel — a city of extraordinary Baroque architecture carved in warm golden stone, with more ornate churches, palazzi, and piazze per square kilometre than almost anywhere else in the country. Nicknamed the Florence of the South, its centro storico has been undergoing a quiet renaissance that has attracted boutique hotels, acclaimed restaurants, and design-focused travellers from across Europe.",
         "The city is the ideal base for exploring the Salento peninsula — the heel of Italy's boot — with Otranto's Byzantine mosaics, Gallipoli's island old town, and some of the clearest sea water in the Mediterranean all within an hour's drive. The Salento summer festival season (June–August) makes Lecce one of the most vibrant destinations in southern Italy.",
@@ -89,6 +73,7 @@ export default function TransferToLecce() {
       internalLinks={[
         { label: 'Transfer from Brindisi Airport', to: '/transfer-from-brindisi-airport' },
         { label: 'Transfer from Bari Airport', to: '/transfer-from-bari-airport' },
+        { label: 'Transfer from Bari Port', to: '/transfer-from-bari-port' },
         { label: 'Salento Day Tour', to: '/tour-salento' },
         { label: 'Transfer to Ostuni', to: '/transfer-to-ostuni' },
         { label: 'Transfer to Matera', to: '/transfer-to-matera-from-puglia' },

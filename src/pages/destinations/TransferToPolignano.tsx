@@ -1,32 +1,17 @@
 import DestinationTransferPage from '../../components/DestinationTransferPage'
+import { routesToPolignano } from '../../lib/arrivalRoutes'
+import { fleetVehicleFaq } from '../../lib/fleet'
 
 export default function TransferToPolignano() {
   return (
     <DestinationTransferPage
       metaTitle="Private Transfer to Polignano a Mare | ConnectinPuglia"
-      metaDesc="Private transfer to Polignano a Mare from Bari Airport. Fixed price, professional driver, direct to your hotel above the Adriatic. ConnectinPuglia."
+      metaDesc="Private transfer to Polignano a Mare from Bari Airport, Bari Port, or Brindisi Airport. Fixed price, professional driver, direct to your hotel above the Adriatic. ConnectinPuglia."
       canonical="https://connectinpuglia.com/transfer-to-polignano-a-mare"
       heroImg="/images/destinations/polignano-hero.webp"
       h1="Private Transfer to Polignano a Mare — Above the Adriatic."
-      subheadline="Your driver meets you at Bari Airport and takes you directly to your hotel in Polignano — one of the closest and most beautiful seaside destinations from BRI."
-      routes={[
-        {
-          airport: 'Bari Airport',
-          airportCode: 'BRI · Bari Karol Wojtyla',
-          distance: '35 km',
-          time: 'approx 30–35 min',
-          via: 'A14 / SS16',
-          recommended: true,
-        },
-        {
-          airport: 'Brindisi Airport',
-          airportCode: 'BDS · Brindisi Papola Casale',
-          distance: '75 km',
-          time: 'approx 55–60 min',
-          via: 'SS379 / A14',
-          recommended: false,
-        },
-      ]}
+      subheadline="Your driver meets you at Bari Airport, Bari Port, or Brindisi Airport and takes you directly to your hotel in Polignano — one of the closest and most beautiful seaside destinations from Bari."
+      routes={routesToPolignano}
       aboutParagraphs={[
         "Polignano a Mare is perched dramatically on a limestone cliff above the Adriatic, with crystal-clear turquoise water crashing against the rocks below. Its old town is a tight maze of whitewashed buildings, aperitivo bars, and restaurants with extraordinary sea views — including the world-famous Grotta Palazzese, carved into a sea cave.",
         "At just 35 kilometres from Bari Airport, Polignano is one of the quickest destinations to reach from BRI — making it an ideal first or last night of a Puglia itinerary. The town is also a convenient base for day trips to Alberobello, Monopoli, and Matera.",
@@ -71,7 +56,7 @@ export default function TransferToPolignano() {
         },
         {
           q: "Which vehicles are available for Polignano transfers?",
-          a: "Mercedes-Benz E-Class (up to 3 passengers), V-Class (up to 7 passengers), and Vito Minibus (up to 8 passengers). All air-conditioned, WiFi on request."
+          a: fleetVehicleFaq,
         },
       ]}
       testimonials={[
@@ -88,6 +73,7 @@ export default function TransferToPolignano() {
       ]}
       internalLinks={[
         { label: 'Transfer from Bari Airport', to: '/transfer-from-bari-airport' },
+        { label: 'Transfer from Bari Port', to: '/transfer-from-bari-port' },
         { label: 'Grotta Palazzese Transfer', to: '/transfer-to-grotta-palazzese' },
         { label: 'Transfer to Monopoli', to: '/transfer-to-monopoli' },
         { label: 'Transfer to Fasano', to: '/transfer-to-fasano-borgo-egnazia' },

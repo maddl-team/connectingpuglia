@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import Header from './Header'
 import Footer from './Footer'
+import { LOGO_URL } from '../../lib/brand'
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
@@ -49,6 +50,7 @@ const localBusinessSchema = {
     name: 'Puglia',
   },
   priceRange: '€€€',
+  logo: LOGO_URL,
   image: 'https://connectinpuglia.com/images/site-og-default.webp',
 }
 

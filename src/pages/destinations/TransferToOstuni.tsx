@@ -1,32 +1,16 @@
 import DestinationTransferPage from '../../components/DestinationTransferPage'
+import { routesToOstuni } from '../../lib/arrivalRoutes'
 
 export default function TransferToOstuni() {
   return (
     <DestinationTransferPage
       metaTitle="Private Transfer to Ostuni from Airport | ConnectinPuglia"
-      metaDesc="Private transfer to Ostuni from Bari or Brindisi airport with ConnectinPuglia. Fixed rates, meet and greet, luxury fleet. Direct to Ostuni and surrounding masserie. Book now."
+      metaDesc="Private transfer to Ostuni from Bari or Brindisi airport, or Bari Port. Fixed rates, meet and greet, Mercedes-Benz E-Class sedan. Direct to Ostuni and surrounding masserie. Book now."
       canonical="https://connectinpuglia.com/transfer-to-ostuni"
       heroImg="/images/destinations/ostuni-hero.webp"
       h1="Private Transfer to Ostuni — The White City Calls."
-      subheadline="Your driver meets you at arrivals and takes you directly to Ostuni — no meters, no navigation stress, fixed price confirmed before you travel."
-      routes={[
-        {
-          airport: 'Brindisi Airport',
-          airportCode: 'BDS · Brindisi Papola Casale',
-          distance: '30 km',
-          time: 'approx 25–30 min',
-          via: 'SS379 / SP17',
-          recommended: true,
-        },
-        {
-          airport: 'Bari Airport',
-          airportCode: 'BRI · Bari Karol Wojtyla',
-          distance: '110 km',
-          time: 'approx 80–90 min',
-          via: 'A14 motorway',
-          recommended: false,
-        },
-      ]}
+      subheadline="Your driver meets you at arrivals or dockside and takes you directly to Ostuni — no meters, no navigation stress, fixed price confirmed before you travel."
+      routes={routesToOstuni}
       aboutParagraphs={[
         "Ostuni is one of Puglia's most striking hilltop towns — a labyrinth of brilliant whitewashed walls, vaulted alleyways, and a magnificent 15th-century Gothic cathedral perched at its summit, visible from miles across the Adriatic plain. The town is known as La Città Bianca, the White City, and it earns that name entirely.",
         "Beyond the centro storico, the Ostuni area is home to some of Puglia's finest rural accommodation — including Masseria Il Frantoio (a Relais & Châteaux property), Torre Del Diamante, Le Carrube, Cervarolo, Dagilupi, and the Rosa Marina coastal resort. The coastline below Ostuni offers some of the cleanest beach water in southern Italy.",
@@ -49,7 +33,11 @@ export default function TransferToOstuni() {
         },
         {
           q: "How far is Ostuni from Bari Airport?",
-          a: "Ostuni is approximately 110km from Bari Airport (BRI) — about 80–90 minutes depending on traffic. If you have a choice of airports, Brindisi is significantly more convenient for Ostuni."
+          a: "Ostuni is approximately 110km from Bari Airport (BRI) — about 80–90 minutes via the SS16 Adriatica, depending on traffic. If you have a choice of airports, Brindisi is significantly more convenient for Ostuni."
+        },
+        {
+          q: "Can I get a transfer from Bari Port to Ostuni?",
+          a: "Yes — arriving by ferry at Bari Port, your driver meets you dockside and takes you to Ostuni in approximately 65 minutes via the SS16 Adriatica. Fixed price confirmed at booking."
         },
         {
           q: "Can cars enter Ostuni old town?",
@@ -91,6 +79,7 @@ export default function TransferToOstuni() {
       internalLinks={[
         { label: 'Transfer from Bari Airport', to: '/transfer-from-bari-airport' },
         { label: 'Transfer from Brindisi Airport', to: '/transfer-from-brindisi-airport' },
+        { label: 'Transfer from Bari Port', to: '/transfer-from-bari-port' },
         { label: 'Transfer to Fasano & Borgo Egnazia', to: '/transfer-to-fasano-borgo-egnazia' },
         { label: 'Transfer to Lecce', to: '/transfer-to-lecce' },
         { label: 'Masseria Il Frantoio Transfer', to: '/transfer-to-masseria-il-frantoio' },
